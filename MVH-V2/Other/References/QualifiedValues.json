@@ -16,27 +16,6 @@
       }
     },
     {
-      "Kind": "4741e5a8-8473-44f5-8710-6354cc0bfe3e_cr8b3_campaignandsubcampaigncodes_forms",
-      "Namespace": "Campaign and Subcampaign Codess (Forms)",
-      "Values": {
-        "Information": "309fb363-68ca-460f-bc7a-d9ff80697290"
-      }
-    },
-    {
-      "Kind": "default.cds_cr8b3_campaignandsubcampaigncodes_forms",
-      "Namespace": "Campaign and Subcampaign Codess_1 (Forms)",
-      "Values": {
-        "Information": "309fb363-68ca-460f-bc7a-d9ff80697290"
-      }
-    },
-    {
-      "Kind": "default.cds_msdyn_candidatetracking_forms",
-      "Namespace": "Candidate trackings (Forms)",
-      "Values": {
-        "Information": "a9f25a1a-f586-410b-8b95-e3be4a4f789d"
-      }
-    },
-    {
       "Kind": "default.cds_contact_forms",
       "Namespace": "Contacts (Forms)",
       "Values": {
@@ -60,10 +39,10 @@
       }
     },
     {
-      "Kind": "default.cds_admin_dataversetables_forms",
-      "Namespace": "Dataverse Tables (Forms)",
+      "Kind": "default.cds_msdyn_candidatetracking_forms",
+      "Namespace": "Candidate trackings (Forms)",
       "Values": {
-        "Information": "fb0c4428-e248-42b2-90fe-d50ba3bae104"
+        "Information": "a9f25a1a-f586-410b-8b95-e3be4a4f789d"
       }
     },
     {
@@ -74,17 +53,10 @@
       }
     },
     {
-      "Kind": "default.cds_cr8b3_partnercodes_forms",
-      "Namespace": "Partner Codess_1 (Forms)",
+      "Kind": "4741e5a8-8473-44f5-8710-6354cc0bfe3e_cr8b3_campaignandsubcampaigncodes_forms",
+      "Namespace": "Campaign and Subcampaign Codess (Forms)",
       "Values": {
-        "Information": "4e6e055c-974f-404e-9db6-e28e6f2c8dff"
-      }
-    },
-    {
-      "Kind": "default.cds_cr8b3_trackingcodes_forms",
-      "Namespace": "Tracking Codes (Forms)",
-      "Values": {
-        "Information": "ee758e0a-0b08-40e3-b4c4-ac0fb245395c"
+        "Information": "309fb363-68ca-460f-bc7a-d9ff80697290"
       }
     },
     {
@@ -96,6 +68,34 @@
         "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
         "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
         "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_admin_dataversetables_forms",
+      "Namespace": "Dataverse Tables (Forms)",
+      "Values": {
+        "Information": "fb0c4428-e248-42b2-90fe-d50ba3bae104"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8b3_trackingcodes_forms",
+      "Namespace": "Tracking Codes (Forms)",
+      "Values": {
+        "Information": "ee758e0a-0b08-40e3-b4c4-ac0fb245395c"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8b3_campaignandsubcampaigncodes_forms",
+      "Namespace": "Campaign and Subcampaign Codess_1 (Forms)",
+      "Values": {
+        "Information": "309fb363-68ca-460f-bc7a-d9ff80697290"
+      }
+    },
+    {
+      "Kind": "default.cds_cr8b3_partnercodes_forms",
+      "Namespace": "Partner Codess_1 (Forms)",
+      "Values": {
+        "Information": "4e6e055c-974f-404e-9db6-e28e6f2c8dff"
       }
     },
     {
