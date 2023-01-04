@@ -1,0 +1,119 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "msdyn_candidatetrackings",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "msdyn_candidatetracking",
+    "Name": "Candidate trackings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msdyn_candidateid": "Candidate",
+      "msdyn_candidatetracking_AsyncOperations": "System Jobs",
+      "msdyn_candidatetracking_BulkDeleteFailures": "Bulk Delete Failures",
+      "msdyn_candidatetracking_DuplicateBaseRecord": "Duplicate Records (msdyn_candidatetracking_DuplicateBaseRecord)",
+      "msdyn_candidatetracking_DuplicateMatchingRecord": "Duplicate Records (msdyn_candidatetracking_DuplicateMatchingRecord)",
+      "msdyn_candidatetracking_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "msdyn_candidatetracking_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "msdyn_candidatetracking_ProcessSession": "Process Sessions",
+      "msdyn_candidatetracking_SyncErrors": "Sync Errors",
+      "msdyn_candidatetracking_talenttagassociation": "Talent tag associations",
+      "msdyn_candidatetrackingid": "Candidate tracking",
+      "msdyn_description": "Description",
+      "msdyn_name": "CDS Name",
+      "msdyn_trackingcategory": "Tracking category",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Candidate trackings",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Candidate trackings (Views)",
+    "Name": "_msdyn_candidatetracking_views",
+    "RelatedEntityName": "Candidate trackings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0fdec464-db4f-478a-a7e2-17717619290e": "Candidate tracking Advanced Find View",
+      "110187ec-537a-423e-839f-ec3ef5110401": "Candidate tracking Associated View",
+      "1694ba28-f20d-44bb-9042-3eeea8147d8e": "Inactive Candidate trackings",
+      "94ac128e-0767-4723-b3f5-684d4ed4faa3": "Candidate tracking Lookup View",
+      "b14a5cda-e154-41ba-ba84-e9a2c1558315": "Active Candidate trackings"
+    }
+  },
+  {
+    "DisplayName": "Tracking category (Candidate trackings)",
+    "Name": "msdyn_candidatetracking_msdyn_trackingcategory",
+    "OptionSetInfoNameMapping": {
+      "0": "Future interest"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_trackingcategory",
+        "OptionSetReferenceEntityName": "Candidate trackings"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_trackingcategory",
+    "RelatedEntityName": "Candidate trackings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Candidate trackings)",
+    "Name": "msdyn_candidatetracking_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Candidate trackings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Candidate trackings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Candidate trackings)",
+    "Name": "msdyn_candidatetracking_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Candidate trackings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Candidate trackings",
+    "Type": "OptionSetInfo"
+  }
+]

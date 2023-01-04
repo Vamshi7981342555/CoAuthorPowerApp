@@ -1,0 +1,5 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: =NewForm(Form2_1);Set(varGalDefault,{});NewForm(Form1);Set(varGalDefault_1,{});NewForm(Form2_3);Set(varGalDefault_2,{})
+    StartScreen: ='ResponsiveOld_Partner Code Screen_2'
+

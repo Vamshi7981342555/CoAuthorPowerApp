@@ -1,0 +1,804 @@
+"'Responsive Old_Welcome Screen' As screen":
+    Fill: =RGBA(255, 255, 255, 1)
+    OnVisible: |
+        =Clear(colCampaign);
+        ForAll(
+            'Campaign and Subcampaign Codess',
+            Collect(
+                colCampaign,
+                Last(
+                    FirstN(
+                        AddColumns(
+                            'Campaign and Subcampaign Codess',
+                            "Row Number",
+                            CountRows(colCampaign) + 1
+                        ),
+                        CountRows(colCampaign) + 1
+                    )
+                )
+            )
+        );
+        Clear(colPartner);
+        ForAll(
+            'Partner Codess',
+            Collect(
+                colPartner,
+                Last(
+                    FirstN(
+                        AddColumns(
+                            'Partner Codess',
+                            "Row Number",
+                            CountRows(colPartner) + 1
+                        ),
+                        CountRows(colPartner) + 1
+                    )
+                )
+            )
+        )
+
+    Header_MVH_6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        rect_BG_8 As rectangle:
+            Fill: =RGBA(252, 252, 252, 1)
+            Height: =63
+            Width: =1366
+            X: =0.00
+            ZIndex: =1
+
+        RectStraightLine_8 As rectangle:
+            Fill: =RGBA(9, 33, 98, 1)
+            Height: =1
+            Width: =Parent.Width
+            X: =0.00
+            Y: =63
+            ZIndex: =7
+
+    "'RectTrac,Camp&PartnerCode_2' As rectangle":
+        Fill: =RGBA(252, 252, 252, 1)
+        Height: =700
+        Width: =207.03
+        X: =1
+        Y: =68
+        ZIndex: =10
+
+    MainHomeContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =54
+
+        HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =62
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =250
+            ZIndex: =1
+
+            Menubar_8 As icon.Hamburger:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(128, 128, 128, 1)
+                FillPortions: =0.5
+                Height: =20
+                Icon: =Icon.Hamburger
+                LayoutMinHeight: =0
+                LayoutMinWidth: =10
+                OnSelect: |-
+                    =If (
+                        _showScreensContainer,
+                        UpdateContext({_showScreensContainer: false}),
+                        UpdateContext({_showScreensContainer: true})
+                    )
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =5
+                PaddingTop: =5
+                Visible: =true ||  If('Responsive Old_Welcome Screen'.Size = Small,true,false)
+                Width: =55
+                X: =192.81
+                Y: =29
+                ZIndex: =1
+
+            LogoMVH_8 As image:
+                AlignInContainer: =AlignInContainer.Center
+                FillPortions: =1
+                Height: =40
+                Image: ='mvh-logo'
+                LayoutMinWidth: =50
+                PaddingBottom: =5
+                PaddingLeft: =10
+                PaddingRight: =60
+                PaddingTop: =5
+                Visible: =If('Responsive Old_Welcome Screen'.Size = Small,true,true)
+                Width: =170
+                X: =19.21
+                ZIndex: =2
+
+            lblWelcomeMVH_4 As label:
+                Align: =Align.Center
+                Color: =RGBA(56, 96, 178, 1)
+                FillPortions: =1
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Bold
+                Height: =44
+                LayoutMinWidth: =100
+                Size: =10.67
+                Text: ="Welcome to MVH "
+                Width: =147.98
+                X: =248.30
+                Y: =16
+                ZIndex: =3
+
+            SpaceLabel As label:
+                Height: =63
+                Text: =""
+                Visible: ='Responsive Old_Welcome Screen'.Size >= ScreenSize.Large
+                Width: =760
+                X: =377
+                Y: =1
+                ZIndex: =4
+
+            IconContainer As groupContainer.horizontalAutoLayoutContainer:
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutMinHeight: =62
+                LayoutMinWidth: =200
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =5
+
+                Container7 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutMinHeight: =40
+                    LayoutMinWidth: =180
+                    Width: =60
+                    ZIndex: =1
+
+                    icnNotification_8 As icon.Bell:
+                        Color: =RGBA(39, 113, 194, 1)
+                        Height: =29
+                        Icon: =Icon.Bell
+                        PaddingLeft: =5
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =26
+                        X: =12
+                        Y: =18
+                        ZIndex: =1
+
+                    Btn_NotificationCount_2 As button:
+                        DisplayMode: =DisplayMode.View
+                        Fill: =RGBA(151, 0, 0, 1)
+                        Height: =20
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Size: =7.11
+                        Text: ="2"
+                        Width: =17
+                        X: =35
+                        Y: =12
+                        ZIndex: =2
+
+                lblNitin_8 As label:
+                    Font: =Font.Lato
+                    Height: =60
+                    LayoutMinWidth: =20
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: =User().FullName
+                    Width: =80
+                    X: =67
+                    Y: =3
+                    ZIndex: =2
+
+                ImgStatus_8 As image:
+                    Height: =60
+                    Image: =User().Image
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =25
+                    RadiusBottomRight: =25
+                    RadiusTopLeft: =25
+                    RadiusTopRight: =25
+                    Width: =50
+                    X: =75
+                    Y: =12
+                    ZIndex: =3
+
+        MainSectionContainer As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            "'Screen''sContainer' As groupContainer.verticalAutoLayoutContainer":
+                FillPortions: =0
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =150
+                LayoutMode: =LayoutMode.Auto
+                Visible: =_showScreensContainer|| If('Responsive Old_Welcome Screen'.Size = Small,false,true)
+                Width: =208
+                ZIndex: =1
+
+                Container3 As groupContainer.manualLayoutContainer:
+                    Height: =230
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =50
+                    Width: =If('Responsive Old_Welcome Screen'.Size = Small,10,500)
+                    ZIndex: =1
+
+                    Group_VerticalMenu_2 As group:
+                        Height: =5
+                        Width: =5
+                        X: =1
+                        Y: =-28
+                        ZIndex: =17
+
+                        Rectangle8_39 As rectangle:
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =53
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            Width: =207
+                            Y: =55
+                            ZIndex: =1
+
+                        Rectangle8_41 As rectangle:
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =53
+                            OnSelect: =Navigate('Old_Partner Code Screen')
+                            Width: =207
+                            Y: =160
+                            ZIndex: =2
+
+                        Rectangle1_41 As rectangle:
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =26
+                            OnSelect: =Navigate('Old_Partner Code Screen')
+                            Width: =2.13
+                            X: =19
+                            Y: =182
+                            ZIndex: =3
+
+                        Label1_41 As label:
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            OnSelect: =Navigate('Old_Partner Code Screen')
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Partner Code"
+                            Width: =106.72
+                            X: =69
+                            Y: =175
+                            ZIndex: =4
+
+                        Icon3_11 As icon.People:
+                            Color: =RGBA(0, 0, 0, 1)
+                            Height: =26
+                            Icon: =Icon.People
+                            OnSelect: =Navigate('Old_Partner Code Screen')
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =18.50
+                            X: =37
+                            Y: =184
+                            ZIndex: =5
+
+                        Rectangle8_40 As rectangle:
+                            Fill: =RGBA(252, 252, 252, 1)
+                            Height: =53
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            Width: =206
+                            Y: =107
+                            ZIndex: =6
+
+                        Rectangle1_40 As rectangle:
+                            Fill: =RGBA(252, 252, 252, 1)
+                            Height: =26
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            Width: =2.13
+                            X: =19
+                            Y: =126
+                            ZIndex: =7
+
+                        Label1_40 As label:
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Campaign"
+                            Width: =106.72
+                            X: =69
+                            Y: =119
+                            ZIndex: =8
+
+                        Icon2_11 As icon.Calendar:
+                            Color: =RGBA(0, 0, 0, 1)
+                            Height: =28
+                            Icon: =Icon.AddToCalendar
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =19.92
+                            X: =34
+                            Y: =125
+                            ZIndex: =9
+
+                        Rectangle8_38 As rectangle:
+                            Fill: =RGBA(0, 0, 160, 1)
+                            Height: =54
+                            OnSelect: =Navigate('Responsive Old_Welcome Screen')
+                            Width: =207.03
+                            Y: =2
+                            ZIndex: =10
+
+                        Rectangle1_39 As rectangle:
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =26
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            Width: =2.13
+                            X: =19
+                            Y: =74
+                            ZIndex: =11
+
+                        Icon1_17 As icon.CollapseView:
+                            Color: =RGBA(0, 0, 0, 1)
+                            Height: =26
+                            Icon: =Icon.CollapseView
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =18.50
+                            X: =36
+                            Y: =74
+                            ZIndex: =12
+
+                        Label1_39 As label:
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Tracking Code"
+                            Width: =106.72
+                            X: =69
+                            Y: =67
+                            ZIndex: =13
+
+                        Rectangle1_38 As rectangle:
+                            Fill: =RGBA(252, 252, 252, 1)
+                            Height: =26
+                            OnSelect: =Navigate('Responsive Old_Welcome Screen')
+                            Width: =2.13
+                            X: =19
+                            Y: =20
+                            ZIndex: =14
+
+                        Label1_38 As label:
+                            Color: =RGBA(255, 255, 255, 1)
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            OnSelect: =Navigate('Responsive Old_Welcome Screen')
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Welcome Screen"
+                            Width: =106.72
+                            X: =66
+                            Y: =14
+                            ZIndex: =15
+
+                        Icon1_16 As icon.Home:
+                            Color: =RGBA(255, 255, 255, 1)
+                            Fill: =If('Responsive Old_Welcome Screen'.Size=Small,RGBA(0, 0, 160, 1),RGBA(0, 0, 0, 0))
+                            Height: =28
+                            Icon: =Icon.Home
+                            OnSelect: =Navigate('Responsive Old_Welcome Screen')
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Tooltip: ="Welcome Screen"
+                            Width: =19.92
+                            X: =37
+                            Y: =17
+                            ZIndex: =16
+
+            Container17 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(240, 240, 240, 1)
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                lbl_Manage_Campaign_2 As label:
+                    AlignInContainer: =AlignInContainer.Start
+                    Color: =RGBA(68, 68, 68, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    PaddingLeft: =40
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =12.81
+                    Text: ="Manage campaigns"
+                    Width: =1155
+                    X: =250
+                    Y: =70
+                    ZIndex: =1
+
+                RectStLine_6 As rectangle:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Fill: =RGBA(116, 116, 116, 1)
+                    Height: =1
+                    Width: =1100
+                    X: =250
+                    Y: =113
+                    ZIndex: =2
+
+                Container18 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =300
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =3
+
+                    Container19 As groupContainer.manualLayoutContainer:
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =500
+                        ZIndex: =3
+
+                        lbl_Weekly_Campaign_2 As label:
+                            Height: =49
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =12.81
+                            Text: ="Featured campaigns"
+                            Width: =269.64
+                            X: =42
+                            ZIndex: =1
+
+                        Rect_Campaign_Overlay_2 As button:
+                            Color: =RGBA(0, 18, 107, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =247
+                            HoverFill: =Self.Fill
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =10.67
+                            Text: =""
+                            Width: =511.54
+                            X: =40
+                            Y: =40
+                            ZIndex: =2
+
+                        "Gal_Campaign_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                            Height: =236
+                            Items: =colCampaign
+                            Layout: =Layout.Vertical
+                            OnSelect: |-
+                                =Set(
+                                    g_CurrentSelectedCampaign,
+                                    Gal_Campaign_2.Selected.'Campaign Name'
+                                );
+                                
+                                EditForm(Form1);
+                                Navigate('Old_Campaign and SubCampaign Code')
+                            ShowScrollbar: =false
+                            TemplatePadding: =0
+                            TemplateSize: =60
+                            Width: =493.04
+                            X: =48
+                            Y: =46
+                            ZIndex: =3
+
+                            lbl_Camp_code_2 As label:
+                                Height: =60
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =9.96
+                                Text: =ThisItem.'Campaign Code'
+                                Width: =69.01
+                                X: =392.01
+                                ZIndex: =1
+
+                            Separator2_4 As rectangle:
+                                Fill: =RGBA(153, 153, 153, 1)
+                                Height: =1
+                                OnSelect: =Select(Parent)
+                                Width: =493.04
+                                X: =0.00
+                                Y: =Parent.TemplateHeight - 1
+                                ZIndex: =2
+
+                            lbl_Camp_Name_2 As label:
+                                FontWeight: =FontWeight.Semibold
+                                Height: =60
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =9.96
+                                Text: =ThisItem.'Campaign Name'
+                                Width: =121.66
+                                X: =185.69
+                                ZIndex: =3
+
+                            lbl_SerialNum_2 As label:
+                                FontWeight: =FontWeight.Bold
+                                Height: =60
+                                OnSelect: =Select(Parent)
+                                PaddingRight: =3.56
+                                PaddingTop: =3.56
+                                Size: =9.25
+                                Text: =ThisItem.'Row Number'
+                                Width: =37.00
+                                X: =10.67
+                                ZIndex: =4
+
+                            Image2_4 As image:
+                                Height: =60
+                                Image: =ThisItem.'Campaign Image'
+                                OnSelect: =Select(Parent)
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Width: =42.69
+                                X: =72.57
+                                ZIndex: =5
+
+                    Container22 As groupContainer.manualLayoutContainer:
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =400
+                        ZIndex: =4
+
+                        lbl_Weekly_Partners_2 As label:
+                            Height: =49
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =12.81
+                            Text: ="Recent partners"
+                            Width: =269.64
+                            ZIndex: =1
+
+                        Rect_Partner_Overlay_2 As button:
+                            Color: =RGBA(0, 0, 0, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =247
+                            HoverFill: =Self.Fill
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =10.67
+                            Text: =""
+                            Width: =510.12
+                            Y: =39
+                            ZIndex: =2
+
+                        "Gal_Partners_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                            Height: =236
+                            Items: =colPartner
+                            Layout: =Layout.Vertical
+                            OnSelect: |
+                                =Set(
+                                    g_CurrentSelectedPartners,
+                                    Gal_Partners_2.Selected.'Partner Name'
+                                );
+                                EditForm(Form2_1);
+                                Navigate('Old_Partner Code Screen')
+                            ShowScrollbar: =false
+                            TemplatePadding: =0
+                            TemplateSize: =60
+                            Width: =493.04
+                            X: =7
+                            Y: =45
+                            ZIndex: =3
+
+                            lbl_Partner_Code_2 As label:
+                                Align: =Align.Center
+                                Height: =60
+                                OnSelect: =Select(Parent)
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Size: =9.96
+                                Text: =ThisItem.'Key Contact Name'
+                                Width: =73.99
+                                X: =374.94
+                                ZIndex: =3
+
+                            Separator2_5 As rectangle:
+                                Fill: =RGBA(153, 153, 153, 1)
+                                Height: =1
+                                OnSelect: =Select(Parent)
+                                Width: =493.04
+                                X: =0.00
+                                Y: =Parent.TemplateHeight - 1
+                                ZIndex: =5
+
+                            lbl_Partner_Name_2 As label:
+                                Color: =RGBA(0, 0, 160, 1)
+                                FontWeight: =FontWeight.Semibold
+                                Height: =60
+                                OnSelect: =Select(Parent)
+                                PaddingRight: =3.56
+                                PaddingTop: =3.56
+                                Size: =9.96
+                                Text: =ThisItem.'Partner Name'
+                                Width: =106.72
+                                X: =192.81
+                                ZIndex: =6
+
+                            lbl_serial_Partners_2 As label:
+                                FontWeight: =FontWeight.Bold
+                                Height: =60
+                                OnSelect: =Select(Parent)
+                                PaddingRight: =3.56
+                                PaddingTop: =3.56
+                                Size: =9.25
+                                Text: =ThisItem.'Row Number'
+                                Width: =37.00
+                                X: =10.67
+                                ZIndex: =7
+
+                            Image2_5 As image:
+                                Height: =60
+                                Image: =ThisItem.Logo
+                                OnSelect: =Select(Parent)
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Width: =42.69
+                                X: =66.88
+                                ZIndex: =8
+
+                Container18_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =55
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width-30
+                    ZIndex: =4
+
+                    Container1 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        LayoutMinHeight: =55
+                        LayoutMinWidth: =250
+                        ZIndex: =1
+
+                        Txt_SearchBox_4 As text:
+                            BorderColor: =RGBA(179, 179, 179, 1)
+                            BorderThickness: =1
+                            Default: =""
+                            Height: =36
+                            HintText: ="Search campaigns"
+                            PaddingLeft: =10
+                            Size: =9.96
+                            Width: =436.84
+                            X: =39
+                            Y: =9
+                            ZIndex: =1
+
+                        icon_Search_4 As icon.Search:
+                            Color: =RGBA(128, 128, 128, 1)
+                            Height: =36
+                            Icon: =Icon.Search
+                            PaddingTop: =0.00
+                            Width: =21.34
+                            X: =442
+                            Y: =9
+                            ZIndex: =2
+
+                    btn_Add_Campaign_2 As button:
+                        AlignInContainer: =AlignInContainer.Center
+                        Fill: =RGBA(0, 0, 160, 1)
+                        Height: =36
+                        OnSelect: |-
+                            =ResetForm(Form1);
+                            NewForm(Form1);
+                            Navigate('Old_Campaign and SubCampaign Code')
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Size: =10.67
+                        Text: ="Add campaign"
+                        Width: =198
+                        X: =1131
+                        Y: =429
+                        ZIndex: =4
+
+                Container20 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =5
+
+                    "HorizontalGallery_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+                        FillPortions: =0
+                        Height: =280
+                        Items: =Search('Campaign and Subcampaign Codess',Txt_SearchBox_4.Text,"cr8b3_campaignname")
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =250
+                        OnSelect: |-
+                            =Set(
+                                g_CurrentSelectedCampaign,
+                                HorizontalGallery_2.Selected.'Campaign Name'
+                            );
+                            EditForm(Form1);
+                            Navigate('Old_Campaign and SubCampaign Code')
+                        ShowScrollbar: =false
+                        TemplatePadding: =0.00
+                        TemplateSize: =278.89
+                        Width: =Parent.Width -40 
+                        X: =255
+                        Y: =471
+                        ZIndex: =1
+
+                        Image3_2 As image:
+                            Height: =200
+                            Image: =ThisItem.'Campaign Image'
+                            ImagePosition: =ImagePosition.Fill
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =200
+                            X: =44
+                            ZIndex: =1
+
+                        Title1_4 As label:
+                            Height: =Self.Size * 1.8
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Size: =9.96
+                            Text: =ThisItem.'Campaign Name'
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =233.36
+                            Y: =220
+                            ZIndex: =2
+
+                        Subtitle1_2 As label:
+                            Height: =43
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Size: =8.54
+                            Text: =ThisItem.Description
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =256.13
+                            X: =11
+                            Y: =258
+                            ZIndex: =3
+

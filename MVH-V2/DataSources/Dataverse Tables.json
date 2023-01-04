@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "admin_dataversetableses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "admin_dataversetables",
+    "Name": "Dataverse Tables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "admin_dataversetables_AsyncOperations": "System Jobs",
+      "admin_dataversetables_BulkDeleteFailures": "Bulk Delete Failures",
+      "admin_dataversetables_DuplicateBaseRecord": "Duplicate Records (admin_dataversetables_DuplicateBaseRecord)",
+      "admin_dataversetables_DuplicateMatchingRecord": "Duplicate Records (admin_dataversetables_DuplicateMatchingRecord)",
+      "admin_dataversetables_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "admin_dataversetables_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "admin_dataversetables_ProcessSession": "Process Sessions",
+      "admin_dataversetables_SyncErrors": "Sync Errors",
+      "admin_dataversetablesid": "Dataverse Tables",
+      "admin_Environment": "Environment",
+      "admin_name": "Name",
+      "admin_tablelogicicalname": "Table Logicical Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Dataverse Tables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Dataverse Tables (Views)",
+    "Name": "_admin_dataversetables_views",
+    "RelatedEntityName": "Dataverse Tables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "00027934-6dd2-4b51-be29-9d87daac1f41": "Dataverse Tables Associated View",
+      "7f1bec2d-5611-4a12-a0f0-321788206e5e": "Dataverse Tables Advanced Find View",
+      "86a2126f-f192-44a5-8d69-0c888a395865": "Dataverse Tables Lookup View",
+      "9b2e0cfd-6ce0-49ca-8ae5-445987781c98": "Inactive Dataverse Tables",
+      "a876af3d-5c8d-451b-bfe7-3162776a8cf9": "Active Dataverse Tables"
+    }
+  },
+  {
+    "DisplayName": "Status (Dataverse Tables)",
+    "Name": "admin_dataversetables_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Dataverse Tables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Dataverse Tables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Dataverse Tables)",
+    "Name": "admin_dataversetables_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Dataverse Tables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Dataverse Tables",
+    "Type": "OptionSetInfo"
+  }
+]

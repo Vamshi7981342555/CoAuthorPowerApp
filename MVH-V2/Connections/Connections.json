@@ -1,0 +1,55 @@
+{
+  "12b85666-71e0-4ef2-997e-9bbf0970bfa9": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-140.westus.logic.azure.com:443/workflows/24f3f3a1154c43a8a5d35295e71f6298/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=5-x3iH38vInIlLHt5Vfrg3dEPvZQgFV5yconrBIvotw",
+      "workflowEndpoint": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/a8e5d57143e84c3c96be344156cf6887-2d6b693033c449fd8e8293bfd2d7bfe4/providers/Microsoft.Logic/workflows/15d4270e-211a-41ce-8bf0-b2be9f751939",
+      "workflowName": "15d4270e-211a-41ce-8bf0-b2be9f751939",
+      "workflowPath": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/a8e5d57143e84c3c96be344156cf6887-2d6b693033c449fd8e8293bfd2d7bfe4/providers/Microsoft.Logic/workflows/15d4270e-211a-41ce-8bf0-b2be9f751939"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "15d4270e-211a-41ce-8bf0-b2be9f751939"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "15d4270e-211a-41ce-8bf0-b2be9f751939"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Trackingcodeflow"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "12b85666-71e0-4ef2-997e-9bbf0970bfa9"
+  },
+  "5ec58d3d-f9dd-42d2-abc4-5b904637d71b": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5ec58d3d-f9dd-42d2-abc4-5b904637d71b"
+  }
+}

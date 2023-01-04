@@ -1,0 +1,220 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8b3_trackingcodeses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8b3_trackingcodes",
+    "MaxGetRowsCount": 500,
+    "Name": "Tracking Codes",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8b3_active": "Active",
+      "cr8b3_addedtoconcur": "Added to Concur",
+      "cr8b3_addedtocoupa": "Added to Coupa",
+      "cr8b3_addedtooracle": "Added to Oracle",
+      "cr8b3_billed": "Billed",
+      "cr8b3_budgetperattendeeautofill": "Budget Per Attendee ",
+      "cr8b3_budgetrequest": "Budget Request",
+      "cr8b3_CampaignName": "Campaign",
+      "cr8b3_codetype": "Code Type",
+      "cr8b3_dates": "Dates",
+      "cr8b3_division": "Division",
+      "cr8b3_group": "Group",
+      "cr8b3_locationcitystate": "Location (City, State)",
+      "cr8b3_meetingname": "Meeting Name",
+      "cr8b3_meetingno": "Meeting No.",
+      "cr8b3_meetingorganizer": "Meeting Organizer",
+      "cr8b3_meetingplanner": "Meeting Planner",
+      "cr8b3_meetingtype": "Meeting Type",
+      "cr8b3_name": "Name",
+      "cr8b3_noofattendees": "No. of Attendees",
+      "cr8b3_noofpartners": "No of Partners",
+      "cr8b3_partnerbudgettotal": "Partner Budget Total ",
+      "cr8b3_PartnerName": "Partners",
+      "cr8b3_region": "Region",
+      "cr8b3_roleofattendees": "Role of Attendees",
+      "cr8b3_trackingcode": "Tracking Code",
+      "cr8b3_trackingcodes_AsyncOperations": "System Jobs",
+      "cr8b3_trackingcodes_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8b3_trackingcodes_DuplicateBaseRecord": "Duplicate Records (cr8b3_trackingcodes_DuplicateBaseRecord)",
+      "cr8b3_trackingcodes_DuplicateMatchingRecord": "Duplicate Records (cr8b3_trackingcodes_DuplicateMatchingRecord)",
+      "cr8b3_trackingcodes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8b3_trackingcodes_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8b3_trackingcodes_ProcessSession": "Process Sessions",
+      "cr8b3_trackingcodes_SyncErrors": "Sync Errors",
+      "cr8b3_trackingcodesid": "Tracking Codes",
+      "cr8b3_year": "Year",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Tracking Codes",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Tracking Codes (Views)",
+    "Name": "_cr8b3_trackingcodes_views",
+    "RelatedEntityName": "Tracking Codes",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "237378ad-640f-4ac5-9c4e-84913fc4a01c": "Tracking Codes Associated View",
+      "4c23f31a-7650-4bae-bb58-efbcaa21d90c": "Tracking Codes Advanced Find View",
+      "ab994581-dab0-40de-977d-1c9d9d435c86": "Tracking Codes Lookup View",
+      "de0a33eb-fa46-4bf9-a33e-09f59a866126": "Active Tracking Codes",
+      "f32259c3-2c55-438e-a73e-a1b7e8bd06d4": "Inactive Tracking Codes"
+    }
+  },
+  {
+    "DisplayName": "DivisionChoices",
+    "Name": "cr8b3_divisionchoices",
+    "OptionSetInfoNameMapping": {
+      "1": "EAST",
+      "2": "SLT",
+      "3": "SR OPS",
+      "4": "SUPPORT",
+      "5": "WEST"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8b3_division",
+        "OptionSetReferenceEntityName": "Tracking Codes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8b3_division",
+    "RelatedEntityName": "Tracking Codes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "GroupChoices",
+    "Name": "cr8b3_groupchoices",
+    "OptionSetInfoNameMapping": {
+      "1": "EAST",
+      "10": "MSW",
+      "11": "NC",
+      "12": "NWH",
+      "13": "SC",
+      "14": "SCP",
+      "15": "SW",
+      "16": "West",
+      "2": "MA",
+      "3": "NA",
+      "4": "SA",
+      "5": "SLT",
+      "6": "ALL",
+      "7": "MED OPS",
+      "8": "P+O",
+      "9": "HL"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8b3_group",
+        "OptionSetReferenceEntityName": "Tracking Codes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr8b3_group",
+    "RelatedEntityName": "Tracking Codes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Active (Tracking Codes)",
+    "Name": "cr8b3_trackingcodes_cr8b3_active",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8b3_active",
+        "OptionSetReferenceEntityName": "Tracking Codes"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr8b3_active",
+    "RelatedEntityName": "Tracking Codes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Billed (Tracking Codes)",
+    "Name": "cr8b3_trackingcodes_cr8b3_billed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr8b3_billed",
+        "OptionSetReferenceEntityName": "Tracking Codes"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr8b3_billed",
+    "RelatedEntityName": "Tracking Codes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Tracking Codes)",
+    "Name": "cr8b3_trackingcodes_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Tracking Codes"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Tracking Codes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Tracking Codes)",
+    "Name": "cr8b3_trackingcodes_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Tracking Codes"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Tracking Codes",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,1114 @@
+"'Old_Campaign and SubCampaign Code' As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+    Fill: =RGBA(240, 240, 240, 1)
+    OnVisible: =ResetForm(Form1)
+
+    "TemplateGalleryList2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Default: =varGalDefault_1
+        Height: =567
+        Items: |-
+            =Search(
+                AddColumns(
+                Sort(
+                    'Campaign and Subcampaign Codess',
+                    'Modified On',
+                    Descending
+                ),
+                "CampaignName",
+                'Campaign Name',
+                "CampaignCode",
+                Text('Campaign Code'),
+                "SubCampaignName",
+                'Sub-Campaign Name'),
+                Txt_SearchBox.Text,
+                "cr8b3_campaignname",
+                "cr8b3_campaigncode",
+                "cr8b3_subcampaignname"
+            )
+        Layout: =Layout.Vertical
+        OnSelect: |+
+            =Set(
+                g_CurrentSelectedCampaign,
+                TemplateGalleryList2.Selected.'Campaign Name'
+            );
+            
+        ShowScrollbar: =false
+        TemplateFill: = RGBA(0, 0, 0, 0)
+        TemplatePadding: =10
+        TemplateSize: =100
+        Width: =436.12
+        X: =241
+        Y: =114
+        ZIndex: =1
+
+        "'btnBGcamp&subCamp' As button":
+            BorderThickness: =0
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =95
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =10.67
+            Text: =""
+            Width: =416.91
+            X: =0.00
+            Y: =5
+            ZIndex: =1
+
+        lblCampaName As label:
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =9.96
+            Text: =ThisItem.'Campaign Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =106.72
+            X: =12.09
+            Y: =61
+            ZIndex: =2
+
+        lblCampaCode As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =9.96
+            Text: =ThisItem.'Campaign Code'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =106.72
+            X: =133.04
+            Y: =60
+            ZIndex: =3
+
+        "'lblSub-CampName' As label":
+            FontWeight: =FontWeight.Semibold
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =9.96
+            Text: =ThisItem.'Sub-Campaign Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =127.35
+            X: =253.99
+            Y: =61
+            ZIndex: =4
+
+        NextArrow5 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =41
+            Icon: =Icon.ChevronRight
+            OnSelect: |-
+                =Select(Parent);ResetForm(Form1);EditForm(Form1);UpdateContext({_showCampaignPopUp:true})
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =7.11
+            PaddingTop: =7.11
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =24.90
+            X: =381.34
+            Y: =41
+            ZIndex: =5
+
+        lblCampName As label:
+            Color: =RGBA(153, 153, 153, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =8.54
+            Text: ="Campaign Name"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =120.95
+            X: =12.09
+            Y: =28
+            ZIndex: =6
+
+        lblCampCode As label:
+            Color: =RGBA(153, 153, 153, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =28
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =8.54
+            Text: ="Campaign Code"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =120.95
+            X: =133.04
+            Y: =29
+            ZIndex: =7
+
+        lblSubCampaign As label:
+            Color: =RGBA(153, 153, 153, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =8.54
+            Text: ="Sub Campaign Name"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =120.95
+            X: =255.41
+            Y: =31
+            ZIndex: =8
+
+    "'RectLeftTracking,Campaign&PartnerCode' As rectangle":
+        Fill: =RGBA(252, 252, 252, 1)
+        Height: =712
+        Width: =218.42
+        X: =0.00
+        Y: =56
+        ZIndex: =2
+
+    btnCreate As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 160, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Normal
+        OnSelect: |
+            =ResetForm(Form1);
+            Set(
+                g_CurrentSelectedCampaign,
+                ""
+            );
+            NewForm(Form1);
+            Set(
+                varGalDefault_1,
+                Blank()
+            );
+            Set(
+                varGalDefault_1,
+                {}
+            );
+            UpdateContext({_showCampaignPopUp: true})
+        PaddingLeft: =35
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Size: =9.25
+        Text: ="Create New Campaign"
+        Width: =167.90
+        X: =1174
+        Y: =62
+        ZIndex: =15
+
+    iconAdd As icon.Add:
+        Color: =RGBA(136, 160, 209, 1)
+        Height: =23
+        Icon: =Icon.Add
+        OnSelect: =
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =16.36
+        X: =1185
+        Y: =71
+        ZIndex: =16
+
+    lblPartnerCode_1 As label:
+        Color: =RGBA(68, 68, 68, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        Size: =12.81
+        Text: ="Campaign and Subcampaign Code"
+        Width: =347.90
+        X: =247
+        Y: =64
+        ZIndex: =17
+
+    RectStLine As rectangle:
+        Fill: =RGBA(116, 116, 116, 1)
+        Height: =1
+        Width: =1102.76
+        X: =247
+        Y: =112
+        ZIndex: =18
+
+    Txt_SearchBox As text:
+        BorderColor: =RGBA(179, 179, 179, 1)
+        BorderThickness: =1
+        Default: =""
+        Height: =38
+        HintText: ="Search"
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        Size: =12.81
+        Width: =388.46
+        X: =595
+        Y: =64
+        ZIndex: =26
+
+    icon_Search As icon.Search:
+        Color: =RGBA(128, 128, 128, 1)
+        Height: =33
+        Icon: =Icon.Search
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =29.88
+        X: =954
+        Y: =65
+        ZIndex: =27
+
+    Form1 As form:
+        DataSource: ='Campaign and Subcampaign Codess'
+        Height: =556
+        Item: |
+            =LookUp('Campaign and Subcampaign Codess','Campaign Name'= g_CurrentSelectedCampaign )
+             
+        NumberOfColumns: =1
+        OnSuccess: =ResetForm(Form1);ViewForm(Form1);Set(varGalDefault_1,Form1.LastSubmit)
+        Width: =643.16
+        X: =706
+        Y: =178
+        ZIndex: =34
+
+        "'Campaign Code_DataCard2' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(204, 204, 204, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_campaigncode"
+            Default: =ThisItem.'Campaign Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Campaign and Subcampaign Codess'],DataSourceInfo.DisplayName,"cr8b3_campaigncode")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =39
+            MaxLength: =DataSourceInfo([@'Campaign and Subcampaign Codess'], DataSourceInfo.MaxLength, "cr8b3_campaigncode")
+            Required: =true
+            Update: =DataCardValue4.Text
+            Width: =643
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =240.19
+                Wrap: =false
+                X: =21.34
+                Y: =6
+                ZIndex: =1
+
+            DataCardValue4 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =1
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =30
+                HintText: ="Enter 3 digit Number Code"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360.28
+                X: =200
+                Y: =6
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =600.47
+                X: =21.34
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =DataCardKey4.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =6
+                ZIndex: =4
+
+        "'Sub-Campaign Code_DataCard1' As typedDataCard.numberEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_subcampaigncode"
+            Default: =ThisItem.'Sub-Campaign Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Campaign and Subcampaign Codess'],DataSourceInfo.DisplayName,"cr8b3_subcampaigncode")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =Value(DataCardValue6.Text)
+            Width: =643
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =240.19
+                Wrap: =false
+                X: =21.34
+                Y: =10 + (DataCardValue6.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue6 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =30
+                HintText: ="Enter 2 digit Number Code"
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360.28
+                X: =200
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =600.47
+                X: =21.34
+                Y: =DataCardValue6.Y + DataCardValue6.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =DataCardKey6.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
+        "'Campaign Name_DataCard1' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_campaignname"
+            Default: =ThisItem.'Campaign Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Campaign and Subcampaign Codess'],DataSourceInfo.DisplayName,"cr8b3_campaignname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Campaign and Subcampaign Codess'], DataSourceInfo.MaxLength, "cr8b3_campaignname")
+            Required: =true
+            Update: =DataCardValue5.Text
+            Width: =643
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =240.19
+                Wrap: =false
+                X: =21.34
+                Y: =10 + (DataCardValue5.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue5 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =30
+                HintText: ="Enter Name"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360.28
+                X: =200
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =600.47
+                X: =21.34
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =DataCardKey5.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        "'Sub-Campaign Name_DataCard1' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_subcampaignname"
+            Default: =ThisItem.'Sub-Campaign Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Campaign and Subcampaign Codess'],DataSourceInfo.DisplayName,"cr8b3_subcampaignname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Campaign and Subcampaign Codess'], DataSourceInfo.MaxLength, "cr8b3_subcampaignname")
+            Required: =true
+            Update: =DataCardValue7.Text
+            Width: =643
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =240.19
+                Wrap: =false
+                X: =21.34
+                Y: =10 + (DataCardValue7.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue7 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =30
+                HintText: ="Enter Name"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360.28
+                X: =200
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =600.47
+                X: =21.34
+                Y: =DataCardValue7.Y + DataCardValue7.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =DataCardKey7.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey7.Y
+                ZIndex: =4
+
+        "'Campaign Image_DataCard1' As typedDataCard.addLargePictureCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_campaignimage"
+            Default: =ThisItem.'Campaign Image'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Campaign and Subcampaign Codess'],DataSourceInfo.DisplayName,"cr8b3_campaignimage")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =176
+            Required: =false
+            Update: =Image1.Image
+            Width: =643
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =240.19
+                Wrap: =false
+                X: =21.34
+                Y: =87
+                ZIndex: =1
+
+            Image1 As image:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =157
+                Image: |-
+                    =If(
+                        IsBlank(AddPicture1.Media),
+                        If(
+                            IsBlankOrError(
+                                LookUp(
+                                    'Campaign and Subcampaign Codess',
+                                    'Campaign Name' = g_CurrentSelectedCampaign
+                                ).'Campaign Image'.Value
+                            ),
+                            ImageBG_1,
+                            LookUp(
+                                'Campaign and Subcampaign Codess',
+                                'Campaign Name' = g_CurrentSelectedCampaign
+                            ).'Campaign Image'.Value
+                        ),
+                        AddPicture1.Media
+                    )
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Tooltip: =Parent.DisplayName
+                Width: =175.73
+                X: =200
+                Y: =10
+                ZIndex: =2
+
+            AddPicture1 As addMedia:
+                BorderColor: =RGBA(230, 230, 230, 1)
+                Fill: =RGBA(204, 204, 204, 1)
+                Height: =37
+                Padding: =10
+                Size: =14.23
+                Text: ="+"
+                Width: =43
+                X: =400
+                Y: =89
+                ZIndex: =3
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =600.47
+                X: =21.34
+                Y: =Image1.Y + Image1.Height
+                ZIndex: =4
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey2.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey2.Y
+                ZIndex: =5
+
+        Description_DataCard1 As typedDataCard.textualMultiLineEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_description"
+            Default: =ThisItem.Description
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Campaign and Subcampaign Codess'],DataSourceInfo.DisplayName,"cr8b3_description")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue8.Text
+            Width: =643
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey12 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =240.19
+                Wrap: =false
+                X: =21.34
+                Y: =10 + (DataCardValue8.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue8 As text:
+                BorderColor: =RGBA(166,166,166,100)
+                BorderThickness: =1
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                HintText: ="Write Description"
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360.28
+                X: =200
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage12 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =600.47
+                X: =21.34
+                Y: =DataCardValue8.Y + DataCardValue8.Height
+                ZIndex: =3
+
+            StarVisible12 As label:
+                Align: =Align.Center
+                Height: =DataCardKey12.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey12.Y
+                ZIndex: =4
+
+    lblNewRecord As label:
+        Height: =38
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        Size: =12.81
+        Text: =If(Form1.Mode = FormMode.New," Create New Campaign and Subcampaign Code "," View\Update  Existing Campaign and Subcampaign Code ")
+        Width: =469
+        X: =677
+        Y: =114
+        ZIndex: =35
+
+    Headergrp_MVH As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =35
+
+        rect_BG_2 As rectangle:
+            Fill: =RGBA(252, 252, 252, 1)
+            Height: =56
+            Width: =1366
+            X: =0.00
+            ZIndex: =19
+
+        LogoMVH_2 As image:
+            Height: =56
+            Image: ='mvh-logo'
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =74
+            X: =19.21
+            ZIndex: =20
+
+        Menubar_2 As icon.Hamburger:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Height: =14
+            Icon: =Icon.Hamburger
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =14
+            X: =192.81
+            Y: =26
+            ZIndex: =21
+
+        ImgStatus_2 As image:
+            Height: =37
+            Image: =User().Image
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =37
+            X: =1312.64
+            Y: =10
+            ZIndex: =22
+
+        lblNitin_2 As label:
+            Font: =Font.Lato
+            Height: =28
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: =User().FullName
+            Width: =106
+            X: =1205.92
+            Y: =14
+            ZIndex: =23
+
+        icnNotification_2 As icon.Bell:
+            Color: =RGBA(39, 113, 194, 1)
+            Height: =26
+            Icon: =Icon.Bell
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =26
+            X: =1158.25
+            Y: =15
+            ZIndex: =24
+
+        RectStraightLine_2 As rectangle:
+            Fill: =RGBA(9, 33, 98, 1)
+            Height: =1
+            Width: =1366
+            X: =0.00
+            Y: =56
+            ZIndex: =25
+
+    btnSubmitform As button:
+        BorderThickness: =0
+        Fill: =RGBA(0, 0, 160, 1)
+        Height: =30
+        OnSelect: =SubmitForm(Form1);Notify("Record Submitted Successfully",NotificationType.Success,5000)
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Size: =9.96
+        Text: ="Submit"
+        Visible: =Form1.Mode <> FormMode.View
+        Width: =100
+        X: =1243
+        Y: =124
+        ZIndex: =36
+
+    Label1 As label:
+        Height: =66
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        Size: =9.25
+        Text: =LookUp('Campaign and Subcampaign Codess','Campaign Name'=TemplateGalleryList2.Selected.'Campaign Name').'Campaign Image'.Value
+        Width: =1098.49
+        X: =267.51
+        Y: =1014
+        ZIndex: =37
+
+    Icon4_1 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =26
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Old_Welcome Screen')
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =18.50
+        X: =37.00
+        Y: =131
+        ZIndex: =41
+
+    "'Vertical_Menu Bar_Campaign Screen' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =47
+
+        Rectangle8_6 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =53
+            OnSelect: =Navigate('OLd_Landing Screen')
+            Width: =218.42
+            X: =0.00
+            Y: =110
+            ZIndex: =3
+
+        Rectangle1_6 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =26
+            OnSelect: =Navigate('OLd_Landing Screen')
+            Width: =2.13
+            X: =19.21
+            Y: =123
+            ZIndex: =4
+
+        Icon1_2 As icon.CollapseView:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =26
+            Icon: =Icon.CollapseView
+            OnSelect: =Navigate('OLd_Landing Screen')
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =18.50
+            X: =36.28
+            Y: =123
+            ZIndex: =5
+
+        Label1_2 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Navigate('OLd_Landing Screen')
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Tracking Code"
+            Width: =106.72
+            X: =69.01
+            Y: =116
+            ZIndex: =6
+
+        Rectangle8_7 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =53
+            OnSelect: =Navigate('Old_Partner Code Screen')
+            Width: =218.42
+            X: =0.00
+            Y: =217
+            ZIndex: =7
+
+        Rectangle1_7 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =26
+            OnSelect: =Navigate('Old_Partner Code Screen')
+            Width: =2.13
+            X: =19.21
+            Y: =231
+            ZIndex: =8
+
+        Label1_7 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Navigate('Old_Partner Code Screen')
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Partner Code"
+            Width: =106.72
+            X: =69.01
+            Y: =224
+            ZIndex: =9
+
+        Icon3_2 As icon.People:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =26
+            Icon: =Icon.People
+            OnSelect: =Navigate('Old_Partner Code Screen')
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =18.50
+            X: =37.00
+            Y: =231
+            ZIndex: =10
+
+        Rectangle8_8 As rectangle:
+            Fill: =RGBA(0, 0, 160, 1)
+            Height: =53
+            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+            Width: =218.42
+            X: =0.00
+            Y: =163
+            ZIndex: =11
+
+        Rectangle1_8 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =26
+            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+            Width: =2.13
+            X: =19.21
+            Y: =177
+            ZIndex: =12
+
+        Label1_8 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.Lato
+            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Campaign"
+            Width: =106.72
+            X: =69.01
+            Y: =170
+            ZIndex: =13
+
+        Icon2_2 As icon.Calendar:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =28
+            Icon: =Icon.AddToCalendar
+            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =19.92
+            X: =34.86
+            Y: =176
+            ZIndex: =14
+
+        Rectangle8_26 As rectangle:
+            Fill: =RGBA(252, 252, 252, 1)
+            Height: =53
+            OnSelect: =Navigate('Old_Welcome Screen')
+            Width: =218.42
+            X: =0.00
+            Y: =57
+            ZIndex: =42
+
+        Rectangle1_26 As rectangle:
+            Fill: =RGBA(252, 252, 252, 1)
+            Height: =26
+            OnSelect: =Navigate('Old_Welcome Screen')
+            Width: =2.13
+            X: =19.21
+            Y: =71
+            ZIndex: =43
+
+        Label1_26 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Navigate('Old_Welcome Screen')
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Welcome Screen"
+            Width: =106.72
+            X: =69.01
+            Y: =64
+            ZIndex: =45
+
+        Icon1_3 As icon.Home:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =28
+            Icon: =Icon.Home
+            OnSelect: =Navigate('Old_Welcome Screen')
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =19.92
+            X: =34.86
+            Y: =70
+            ZIndex: =46
+

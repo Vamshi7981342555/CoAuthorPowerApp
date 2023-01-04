@@ -1,0 +1,106 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8b3_campaignandsubcampaigncodeses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8b3_campaignandsubcampaigncodes",
+    "MaxGetRowsCount": 500,
+    "Name": "Campaign and Subcampaign Codess",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8b3_campaignandsubcampaigncodes_AsyncOperations": "System Jobs",
+      "cr8b3_campaignandsubcampaigncodes_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8b3_campaignandsubcampaigncodes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8b3_campaignandsubcampaigncodes_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8b3_campaignandsubcampaigncodes_ProcessSession": "Process Sessions",
+      "cr8b3_campaignandsubcampaigncodes_SyncErrors": "Sync Errors",
+      "cr8b3_campaignandsubcampaigncodesid": "Campaign and Subcampaign Codes",
+      "cr8b3_campaigncode": "Campaign Code",
+      "cr8b3_campaignimage": "Campaign Image",
+      "cr8b3_campaignimageid": "cr8b3_CampaignImageId",
+      "cr8b3_campaignname": "Campaign Name",
+      "cr8b3_cr8b3_trackingcodes_CampaignName_cr8b3_ca": "Tracking Codes",
+      "cr8b3_description": "Description",
+      "cr8b3_enddate": "End Date",
+      "cr8b3_startduration": "Start Date",
+      "cr8b3_subcampaigncode": "Sub-Campaign Code",
+      "cr8b3_subcampaignname": "Sub-Campaign Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_itemtype": "Item Type",
+      "new_title": "Title",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Campaign and Subcampaign Codess",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Campaign and Subcampaign Codess (Views)",
+    "Name": "_cr8b3_campaignandsubcampaigncodes_views",
+    "RelatedEntityName": "Campaign and Subcampaign Codess",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "24434c63-ffd3-4ae3-a557-570019664c6d": "Campaign and Subcampaign Codes Associated View",
+      "412bae41-b40e-4a42-a936-1d51d14428fa": "Campaign and Subcampaign Codes Advanced Find View",
+      "6201c7ac-db8c-4ae0-92bd-03a5e6522d0c": "Campaign and Subcampaign Codes Lookup View",
+      "8a08065b-1a68-405f-88f4-e6516f52b750": "Active Campaign and Subcampaign Codess",
+      "e61e5678-1dae-4a18-9b3e-8f5ac35d4ea6": "Inactive Campaign and Subcampaign Codess"
+    }
+  },
+  {
+    "DisplayName": "Status (Campaign and Subcampaign Codess)",
+    "Name": "cr8b3_campaignandsubcampaigncodes_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Campaign and Subcampaign Codess"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Campaign and Subcampaign Codess",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Campaign and Subcampaign Codess)",
+    "Name": "cr8b3_campaignandsubcampaigncodes_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Campaign and Subcampaign Codess"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Campaign and Subcampaign Codess",
+    "Type": "OptionSetInfo"
+  }
+]

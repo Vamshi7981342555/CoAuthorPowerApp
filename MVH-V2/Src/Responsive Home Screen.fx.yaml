@@ -1,0 +1,146 @@
+"'Responsive Home Screen' As screen":
+    OnVisible: =If('Responsive Home Screen'.Size = Small,LayoutOverflow.Scroll,false)
+
+    Container38 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =27
+
+        Container39 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Visible: =If('Responsive Home Screen'.Size = Small,false,true)
+            Width: =810
+            ZIndex: =1
+
+            ImageBG_2 As image:
+                Height: =768
+                Image: =bg
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =1365.29
+                X: =0.00
+                ZIndex: =1
+
+        Container39_1 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =If('Responsive Home Screen'.Size = Small,LayoutOverflow.Scroll,false)
+            ZIndex: =2
+
+            Container40 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =1
+
+                ImageMVH_1 As image:
+                    Height: =229
+                    Image: ='mvh-logo'
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =162.92
+                    X: =65.61000000000001
+                    Y: =40
+                    ZIndex: =1
+
+                btnTrackingCode_1 As button:
+                    Color: =RGBA(56, 96, 178, 1)
+                    DisabledBorderColor: =RGBA(230, 230, 230, 1)
+                    Fill: =RGBA(230, 230, 230, 1)
+                    Font: =Font.'Lato Light'
+                    Height: =153
+                    OnSelect: =Navigate('OLd_Landing Screen')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =21.34
+                    Text: ="Tracking Code"
+                    Width: =213.44
+                    X: =40
+                    Y: =261
+                    ZIndex: =2
+
+                btnCampaign_1 As button:
+                    Color: =RGBA(56, 96, 178, 1)
+                    DisabledBorderColor: =RGBA(230, 230, 230, 1)
+                    Fill: =RGBA(230, 230, 230, 1)
+                    Font: =Font.'Lato Light'
+                    Height: =153
+                    OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =21.34
+                    Text: ="Campaign"
+                    Width: =213.44
+                    X: =313
+                    Y: =261
+                    ZIndex: =3
+
+                btnPartnerCode_1 As button:
+                    Color: =RGBA(56, 96, 178, 1)
+                    DisabledBorderColor: =RGBA(230, 230, 230, 1)
+                    Fill: =RGBA(230, 230, 230, 1)
+                    Font: =Font.'Lato Light'
+                    Height: =153
+                    OnSelect: =Navigate('Old_Partner Code Screen')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =21.34
+                    Text: ="Partner Code"
+                    Width: =213.44
+                    X: =168.76999999999998
+                    Y: =464
+                    ZIndex: =4
+
+                icnPartnerCode_1 As icon.People:
+                    Color: =RGBA(102, 113, 166, 1)
+                    Height: =36
+                    Icon: =Icon.People
+                    OnSelect: =Navigate('Old_Partner Code Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =36
+                    X: =252.64999999999998
+                    Y: =569
+                    ZIndex: =5
+
+                icnCampaign_1 As icon.Calendar:
+                    Color: =RGBA(102, 113, 166, 1)
+                    Height: =36
+                    Icon: =Icon.AddToCalendar
+                    OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =36
+                    X: =401
+                    Y: =362
+                    ZIndex: =6
+
+                icnTrackingCode_1 As icon.CollapseView:
+                    Color: =RGBA(102, 113, 166, 1)
+                    Height: =36
+                    Icon: =Icon.CollapseView
+                    OnSelect: =Navigate('OLd_Landing Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =36
+                    X: =122.64999999999998
+                    Y: =362
+                    ZIndex: =7
+

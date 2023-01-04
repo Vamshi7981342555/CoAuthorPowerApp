@@ -1,0 +1,1660 @@
+"'ResponsiveOld_Partner Code Screen_2' As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+    OnVisible: |-
+        =If(
+            'ResponsiveOld_Partner Code Screen_2'.Size = 1,
+            UpdateContext(
+                {
+                    _showContainer25_2: true,
+                    _showContainer25_3: false
+                }
+            ),
+            UpdateContext(
+                {
+                    _showContainer25_2: true,
+                    _showContainer25_3: true
+                }
+            )
+        );
+        If(
+            'ResponsiveOld_Partner Code Screen_2'.Size = 1,
+            UpdateContext(
+                {
+                    _showContainer25_2: false,
+                    _showContainer25_3: true
+                }
+            ),
+            UpdateContext(
+                {
+                    _showContainer25_2: true,
+                    _showContainer25_3: true
+                }
+            )
+        );
+        If(
+            _showContainer25_3,
+            UpdateContext({_showContainer25_3: false}),
+            UpdateContext({_showContainer25_3: true})
+        );
+        If(
+            'ResponsiveOld_Partner Code Screen_2'.Size = 1,
+            "Add",
+            "Create New Partner Code"
+        )
+
+    main_2 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =36
+
+        Header_6 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =53
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            LogoMVH_17 As image:
+                AlignInContainer: =AlignInContainer.Center
+                Height: =53
+                Image: ='mvh-logo'
+                PaddingLeft: =10
+                PaddingTop: =0.00
+                X: =21
+                ZIndex: =1
+
+            Label6_3 As label:
+                Height: =53
+                Text: =""
+                Visible: ='ResponsiveOld_Partner Code Screen_2'.Size >= ScreenSize.Large
+                Width: =110
+                ZIndex: =2
+
+            Menubar_17 As icon.Hamburger:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Height: =26
+                Icon: =Icon.Hamburger
+                OnSelect: |-
+                    =If (
+                        _showContainer12,
+                        UpdateContext({_showContainer12: false}),
+                        UpdateContext({_showContainer12: true})
+                    )
+                PaddingLeft: =10
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =30
+                X: =192.81
+                Y: =19
+                ZIndex: =3
+
+            Label4_7 As label:
+                AlignInContainer: =AlignInContainer.Stretch
+                FillPortions: =1
+                PaddingLeft: =10
+                Text: =""
+                Visible: ='ResponsiveOld_Partner Code Screen_2'.Size >= ScreenSize.Large
+                Width: =750
+                ZIndex: =4
+
+            Label7_3 As label:
+                Height: =53
+                Text: =""
+                Visible: ='ResponsiveOld_Partner Code Screen_2'.Size >= ScreenSize.Large
+                ZIndex: =5
+
+            Container9_6 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                LayoutMinHeight: =53
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =250
+                ZIndex: =6
+
+                Container10_6 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
+                    LayoutMinHeight: =53
+                    LayoutMinWidth: =250
+                    Width: =60
+                    ZIndex: =1
+
+                    icnNotification_17 As icon.Bell:
+                        Color: =RGBA(39, 113, 194, 1)
+                        Height: =19
+                        Icon: =Icon.Bell
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =26
+                        X: =9
+                        Y: =20
+                        ZIndex: =1
+
+                    Btn_NotificationCount_10 As button:
+                        DisplayMode: =DisplayMode.View
+                        Fill: =RGBA(151, 0, 0, 1)
+                        Height: =20
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Size: =7.11
+                        Text: ="2"
+                        Width: =17
+                        X: =25
+                        Y: =5
+                        ZIndex: =2
+
+                lblNitin_17 As label:
+                    AlignInContainer: =AlignInContainer.Center
+                    Font: =Font.Lato
+                    Height: =53
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: =User().FullName
+                    Width: =106
+                    X: =1205.92
+                    Y: =11
+                    ZIndex: =2
+
+                ImgStatus_17 As image:
+                    AlignInContainer: =AlignInContainer.Center
+                    Height: =53
+                    Image: =User().Image
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Width: =53
+                    X: =1312.64
+                    Y: =8
+                    ZIndex: =3
+
+        Container51_1 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =1
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            RectStraightLine_15 As rectangle:
+                Fill: =RGBA(9, 33, 98, 1)
+                Height: =1
+                Width: =Parent.Width
+                X: =0.00
+                Y: =53
+                ZIndex: =1
+
+        section_2 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            Container12_2 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Visible: =_showContainer12 || If('ResponsiveOld_Partner Code Screen_2'.Size = 1,false,true)
+                Width: =220
+                ZIndex: =1
+
+                Container13_2 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =220
+                    ZIndex: =1
+
+                    "'Vertical_Menu Bar_Partner Screen_4' As group":
+                        Height: =5
+                        Width: =5
+                        X: =2
+                        Y: =-14
+                        ZIndex: =17
+
+                        Rectangle8_55 As rectangle:
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =53
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            Width: =218.42
+                            Y: =55
+                            ZIndex: =1
+
+                        Rectangle1_55 As rectangle:
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =26
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            Width: =2.13
+                            X: =19
+                            Y: =69
+                            ZIndex: =2
+
+                        Icon1_27 As icon.CollapseView:
+                            Color: =RGBA(0, 0, 0, 1)
+                            Height: =26
+                            Icon: =Icon.CollapseView
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =18.50
+                            X: =36
+                            Y: =69
+                            ZIndex: =3
+
+                        Label1_53 As label:
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            OnSelect: =Navigate('OLd_Landing Screen')
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Tracking Code"
+                            Width: =106.72
+                            X: =69
+                            Y: =62
+                            ZIndex: =4
+
+                        Rectangle8_56 As rectangle:
+                            Fill: =RGBA(0, 0, 160, 1)
+                            Height: =53
+                            Width: =218.42
+                            Y: =162
+                            ZIndex: =5
+
+                        Rectangle1_56 As rectangle:
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =26
+                            Width: =2.13
+                            X: =19
+                            Y: =175
+                            ZIndex: =6
+
+                        Label1_54 As label:
+                            Color: =RGBA(255, 255, 255, 1)
+                            Font: =Font.Lato
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Partner Code"
+                            Width: =106.72
+                            X: =69
+                            Y: =168
+                            ZIndex: =7
+
+                        Icon3_15 As icon.People:
+                            Color: =RGBA(255, 255, 255, 1)
+                            Height: =26
+                            Icon: =Icon.People
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =18.50
+                            X: =37
+                            Y: =177
+                            ZIndex: =8
+
+                        RectAllCampaign_4 As rectangle:
+                            Fill: =RGBA(252, 252, 252, 1)
+                            Height: =53
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            Width: =218.42
+                            Y: =109
+                            ZIndex: =9
+
+                        Rect1_4 As rectangle:
+                            Fill: =RGBA(252, 252, 252, 1)
+                            Height: =26
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            Width: =2.13
+                            X: =19
+                            Y: =122
+                            ZIndex: =10
+
+                        iconCampaign_4 As icon.Calendar:
+                            Color: =RGBA(0, 0, 0, 1)
+                            Height: =28
+                            Icon: =Icon.AddToCalendar
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =19.92
+                            X: =34
+                            Y: =121
+                            ZIndex: =11
+
+                        lblCampaign_4 As label:
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Campaign"
+                            Width: =106.72
+                            X: =69
+                            Y: =115
+                            ZIndex: =12
+
+                        Rectangle8_54 As rectangle:
+                            Fill: =RGBA(252, 252, 252, 1)
+                            Height: =53
+                            OnSelect: =Navigate('Old_Welcome Screen')
+                            Width: =218.42
+                            Y: =2
+                            ZIndex: =13
+
+                        Rectangle1_54 As rectangle:
+                            Fill: =RGBA(252, 252, 252, 1)
+                            Height: =26
+                            OnSelect: =Navigate('Old_Welcome Screen')
+                            Width: =2.13
+                            X: =19
+                            Y: =22
+                            ZIndex: =14
+
+                        Label1_52 As label:
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            OnSelect: =Navigate('Old_Welcome Screen')
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =9.25
+                            Text: ="Welcome Screen"
+                            Width: =106.72
+                            X: =66
+                            Y: =11
+                            ZIndex: =15
+
+                        Icon1_26 As icon.Home:
+                            Color: =RGBA(0, 0, 0, 1)
+                            Height: =28
+                            Icon: =Icon.Home
+                            OnSelect: =Navigate('Old_Welcome Screen')
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =19.92
+                            X: =36
+                            Y: =17
+                            ZIndex: =16
+
+            Container14_2 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Fill: =RGBA(240, 240, 240, 1)
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =60
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =
+                ZIndex: =2
+
+                Container21_2 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =53
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Container44_1 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =1.8
+                        LayoutMinHeight: =53
+                        LayoutMinWidth: =100
+                        LayoutMode: =LayoutMode.Auto
+                        Visible: =If('ResponsiveOld_Partner Code Screen_2'.Size = 1,false,true)
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        lblPartnerCode_7 As label:
+                            Color: =RGBA(68, 68, 68, 1)
+                            FillPortions: =1
+                            FontWeight: =FontWeight.Bold
+                            Height: =53
+                            LayoutMinWidth: =100
+                            PaddingLeft: =If('ResponsiveOld_Partner Code Screen_2'.Size = 1,0,70)
+                            PaddingRight: =3.56
+                            PaddingTop: =3.56
+                            Size: =12.81
+                            Text: ="Partner Code"
+                            Visible: =If('ResponsiveOld_Partner Code Screen_2'.Size = 1,false,true)
+                            Width: =Parent.Width
+                            Y: =5
+                            ZIndex: =1
+
+                    Container27_2 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        FillPortions: =2
+                        Height: =53
+                        LayoutMinHeight: =53
+                        LayoutMinWidth: =170
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Container28_2 As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =53
+                            LayoutMinWidth: =170
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                            Txtinp_Search_4 As text:
+                                BorderColor: =RGBA(179, 179, 179, 1)
+                                BorderStyle: =None
+                                BorderThickness: =1
+                                Default: =""
+                                Height: =41
+                                HintText: =" Search"
+                                PaddingLeft: =If('ResponsiveOld_Partner Code Screen_2'.Size =1,0,12)
+                                PaddingRight: =3.56
+                                PaddingTop: =3.56
+                                Size: =12.81
+                                Width: =352
+                                X: =3
+                                Y: =6
+                                ZIndex: =1
+
+                            icnSearch_4 As icon.Search:
+                                Height: =36
+                                Icon: =Icon.Search
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Width: =36
+                                X: =308
+                                Y: =8
+                                ZIndex: =2
+
+                    Label5_1 As label:
+                        FillPortions: =1
+                        Height: =53
+                        Text: =""
+                        Visible: ='ResponsiveOld_Partner Code Screen_2'.Size >= ScreenSize.Large
+                        Width: =220
+                        ZIndex: =3
+
+                    Container29_2 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Height: =53
+                        LayoutMinHeight: =53
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =4
+
+                        Container30_2 As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =53
+                            LayoutMinWidth: =100
+                            Width: =Parent.Width
+                            ZIndex: =3
+
+                            btnCreateNewPartnerCode_7 As button:
+                                BorderStyle: =BorderStyle.None
+                                Fill: =RGBA(0, 0, 160, 1)
+                                Font: =Font.Lato
+                                FontWeight: =FontWeight.Normal
+                                Height: =45
+                                OnSelect: |-
+                                    =ResetForm(Form2_7);
+                                    Set(
+                                        g_CurrentSelectedPartners,
+                                        ""
+                                    );
+                                    NewForm(Form2_7);
+                                    Set(
+                                        varGalDefault,
+                                        Blank()
+                                    );
+                                    Set(
+                                        varGalDefault,
+                                        {}
+                                    );
+                                    UpdateContext({_showPartner: true});
+                                    If(
+                                        'ResponsiveOld_Partner Code Screen_2'.Size = 1,
+                                        UpdateContext(
+                                            {
+                                                _showContainer25_2: false,
+                                                _showContainer25_3: true
+                                            }
+                                        ),
+                                        UpdateContext(
+                                            {
+                                                _showContainer25_2: true,
+                                                _showContainer25_3: true
+                                            }
+                                        )
+                                    )
+                                PaddingLeft: =35
+                                PaddingRight: =3.56
+                                PaddingTop: =3.56
+                                RadiusBottomLeft: =3
+                                RadiusBottomRight: =3
+                                RadiusTopLeft: =3
+                                RadiusTopRight: =3
+                                Size: =9.25
+                                Text: =If('ResponsiveOld_Partner Code Screen_2'.Size =1 ,"Add","Create New Partner Code")
+                                Tooltip: =
+                                Width: =If('ResponsiveOld_Partner Code Screen_2'.Size = 1,90,184)
+                                X: =44
+                                Y: =4
+                                ZIndex: =1
+
+                            icnAdd_7 As icon.Add:
+                                Color: =RGBA(136, 160, 209, 1)
+                                Height: =45
+                                Icon: =Icon.Add
+                                OnSelect: |-
+                                    =ResetForm(Form2_7);
+                                    Set(
+                                        g_CurrentSelectedPartners,
+                                        ""
+                                    );
+                                    NewForm(Form2_7);
+                                    Set(
+                                        varGalDefault,
+                                        Blank()
+                                    );
+                                    Set(
+                                        varGalDefault,
+                                        {}
+                                    );
+                                    UpdateContext({_showPartner: true});
+                                    If(
+                                        'ResponsiveOld_Partner Code Screen_2'.Size = 1,
+                                        UpdateContext(
+                                            {
+                                                _showContainer25_2: false,
+                                                _showContainer25_3: true
+                                            }
+                                        ),
+                                        UpdateContext(
+                                            {
+                                                _showContainer25_2: true,
+                                                _showContainer25_3: true
+                                            }
+                                        )
+                                    )
+                                PaddingRight: =0.00
+                                PaddingTop: =0.00
+                                Width: =16.36
+                                X: =57
+                                Y: =4
+                                ZIndex: =2
+
+                Container52_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =2
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
+
+                    RectStraightLine_16 As rectangle:
+                        Fill: =RGBA(9, 33, 98, 1)
+                        Height: =1
+                        Width: =Parent.Width
+                        X: =0.00
+                        Y: =53
+                        ZIndex: =1
+
+                Container24_2 As groupContainer.horizontalAutoLayoutContainer:
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                    Container25_4 As groupContainer.verticalAutoLayoutContainer:
+                        FillPortions: =0.4
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =300
+                        LayoutMode: =LayoutMode.Auto
+                        Visible: =_showContainer25_2
+                        Width: =350
+                        ZIndex: =1
+
+                        Container31_2 As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            ZIndex: =1
+
+                            "TemplateGalleryList1_5 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+                                Default: =varGalDefault
+                                Height: =662
+                                Items: |-
+                                    =Search(
+                                        AddColumns(
+                                            Sort(
+                                                'Partner Codess',
+                                                'Modified On',
+                                                Descending
+                                            ),
+                                            "PartnerName",
+                                            cr8b3_partnername,
+                                            "PartnerCode",
+                                            Text(cr8b3_partnercode)
+                                        ),
+                                        Txtinp_Search_4.Text,
+                                        "PartnerName",
+                                        "PartnerCode"
+                                    )
+                                Layout: =Layout.Vertical
+                                OnSelect: |-
+                                    =Set(
+                                        g_CurrentSelectedPartners,
+                                        TemplateGalleryList1_5.Selected.'Partner Name'
+                                    );
+                                ShowScrollbar: =false
+                                TemplateFill: = RGBA(0, 0, 0, 0)
+                                TemplatePadding: =10
+                                TemplateSize: =85
+                                Width: =262.53
+                                X: =33
+                                ZIndex: =1
+
+                                btn_BG_4 As button:
+                                    BorderThickness: =0
+                                    DisplayMode: =DisplayMode.View
+                                    Fill: =RGBA(230, 230, 230, 1)
+                                    Height: =79
+                                    OnSelect: =Select(Parent)
+                                    PaddingRight: =3.56
+                                    PaddingTop: =3.56
+                                    RadiusBottomLeft: =12
+                                    RadiusBottomRight: =12
+                                    RadiusTopLeft: =12
+                                    RadiusTopRight: =12
+                                    Size: =10.67
+                                    Text: =""
+                                    Width: =241
+                                    X: =1
+                                    Y: =6
+                                    ZIndex: =1
+
+                                lblpartName1_4 As label:
+                                    Color: =RGBA(9, 33, 98, 1)
+                                    Height: =30
+                                    OnSelect: =Select(Parent)
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0.00
+                                    PaddingTop: =0.00
+                                    Size: =9.96
+                                    Text: =ThisItem.'Partner Name'
+                                    Width: =113.83
+                                    X: =9.96
+                                    Y: =38
+                                    ZIndex: =2
+
+                                lblCodeNo_4 As label:
+                                    Color: =RGBA(9, 33, 98, 1)
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =30
+                                    OnSelect: =Select(Parent)
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0.00
+                                    PaddingTop: =0.00
+                                    Size: =9.96
+                                    Text: =ThisItem.'Partner Code'
+                                    Width: =85.38
+                                    X: =125.93
+                                    Y: =38
+                                    ZIndex: =3
+
+                                NextArrow3_5 As icon.ChevronRight:
+                                    AccessibleLabel: =Self.Tooltip
+                                    Height: =32
+                                    Icon: =Icon.ChevronRight
+                                    OnSelect: |-
+                                        =Select(Parent);
+                                        ResetForm(Form2_7);
+                                        EditForm(Form2_7);
+                                        If(
+                                            'ResponsiveOld_Partner Code Screen_2'.Size = 1,
+                                            UpdateContext(
+                                                {
+                                                    _showContainer25_2: false,
+                                                    _showContainer25_3: true
+                                                }
+                                            ),
+                                            UpdateContext(
+                                                {
+                                                    _showContainer25_2: true,
+                                                    _showContainer25_3: true
+                                                }
+                                            )
+                                        )
+                                    PaddingBottom: =10
+                                    PaddingLeft: =10
+                                    PaddingRight: =7.11
+                                    PaddingTop: =7.11
+                                    TabIndex: =0
+                                    Tooltip: ="View item details"
+                                    Width: =22.77
+                                    X: =206.32
+                                    Y: =22
+                                    ZIndex: =4
+
+                                lblPartName_4 As label:
+                                    Color: =RGBA(116, 116, 116, 1)
+                                    FontWeight: =FontWeight.Normal
+                                    Height: =30
+                                    OnSelect: =Select(Parent)
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0.00
+                                    PaddingTop: =0.00
+                                    Size: =8.54
+                                    Text: ="Partner Name"
+                                    Width: =91.78
+                                    X: =9.96
+                                    Y: =4
+                                    ZIndex: =5
+
+                                lblPartnerCod_4 As label:
+                                    Color: =RGBA(116, 116, 116, 1)
+                                    FontWeight: =FontWeight.Normal
+                                    Height: =30
+                                    OnSelect: =Select(Parent)
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0.00
+                                    PaddingTop: =0.00
+                                    Size: =8.54
+                                    Text: ="Partner Code"
+                                    Width: =80.39
+                                    X: =125.93
+                                    Y: =4
+                                    ZIndex: =6
+
+                    Container25_5 As groupContainer.verticalAutoLayoutContainer:
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Visible: =_showContainer25_3 || If('ResponsiveOld_Partner Code Screen_2'.Size = 1,false,true)
+                        Width: =850
+                        ZIndex: =2
+
+                        Container15_3 As groupContainer.horizontalAutoLayoutContainer:
+                            FillPortions: =0
+                            Height: =40
+                            LayoutMinHeight: =10
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            ZIndex: =1
+
+                            lbl_NewRecord_4 As label:
+                                Align: =Align.Justify
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =2.5
+                                LayoutMinWidth: =300
+                                PaddingLeft: =If('ResponsiveOld_Partner Code Screen_2'.Size = 1,0,20)
+                                PaddingRight: =3.56
+                                PaddingTop: =3.56
+                                Size: =12.81
+                                Text: =If(Form2_7.Mode = FormMode.New,"Create New Partner Code","  View\Update Existing Partner Code")
+                                Width: =680
+                                X: =45
+                                ZIndex: =1
+
+                            Container41_1 As groupContainer.horizontalAutoLayoutContainer:
+                                FillPortions: =0.3
+                                LayoutMinHeight: =40
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                ZIndex: =2
+
+                                Container42_1 As groupContainer.manualLayoutContainer:
+                                    LayoutMinHeight: =40
+                                    LayoutMinWidth: =250
+                                    ZIndex: =1
+
+                                    Button4_5 As button:
+                                        Fill: =RGBA(0, 0, 160, 1)
+                                        Height: =30
+                                        OnSelect: |
+                                            =SubmitForm(Form2_7);
+                                            Notify(
+                                                "Record Submitted Successfully",
+                                                NotificationType.Success,
+                                                5000
+                                            );
+                                        PaddingLeft: =0
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =4
+                                        RadiusBottomRight: =4
+                                        RadiusTopLeft: =4
+                                        RadiusTopRight: =4
+                                        Size: =9.96
+                                        Text: ="Submit"
+                                        Visible: =Form2_7.Mode <> FormMode.View
+                                        Width: =113.83
+                                        X: =111
+                                        Y: =3
+                                        ZIndex: =1
+
+                        Container43_1 As groupContainer.verticalAutoLayoutContainer:
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =20
+                            ZIndex: =2
+
+                            Form2_7 As form:
+                                BorderColor: =RGBA(230, 230, 230, 1)
+                                DataSource: ='Partner Codess'
+                                DefaultMode: =FormMode.New
+                                Fill: =RGBA(240, 240, 240, 1)
+                                Height: =582
+                                Item: =LookUp('Partner Codess','Partner Name'=g_CurrentSelectedPartners)
+                                LayoutMinHeight: =250
+                                LayoutMinWidth: =400
+                                NumberOfColumns: =1
+                                OnSuccess: |-
+                                    =ResetForm(Form2_7);
+                                    ViewForm(Form2_7);
+                                    Set(
+                                        varGalDefault,
+                                        Form2_7.LastSubmit
+                                    );
+                                    If(
+                                        'ResponsiveOld_Partner Code Screen_2'.Size = 1,
+                                        UpdateContext(
+                                            {
+                                                _showContainer25_2: true,
+                                                _showContainer25_3: false
+                                            }
+                                        ),
+                                        UpdateContext(
+                                            {
+                                                _showContainer25_2: true,
+                                                _showContainer25_3: true
+                                            }
+                                        )
+                                    )
+                                Width: =744.19
+                                X: =50
+                                Y: =36
+                                ZIndex: =1
+
+                                "'Partner Name_DataCard2_5' As typedDataCard.textualEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_partnername"
+                                    Default: =ThisItem.'Partner Name'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_partnername")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =50
+                                    MaxLength: =DataSourceInfo([@'Partner Codess'], DataSourceInfo.MaxLength, "cr8b3_partnername")
+                                    Required: =true
+                                    Update: =DataCardValue15_6.Text
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =1
+
+                                    DataCardKey15_6 As label:
+                                        Height: =25
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName
+                                        Width: =179
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue15_6 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Height: =30
+                                        HintText: ="Enter Name"
+                                        MaxLength: =Parent.MaxLength
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =6
+                                        ZIndex: =2
+
+                                    ErrorMessage11_8 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue15_6.Y + DataCardValue15_6.Height
+                                        ZIndex: =3
+
+                                    StarVisible11_8 As label:
+                                        Align: =Align.Center
+                                        Color: =RGBA(255, 0, 0, 1)
+                                        Height: =DataCardKey15_6.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =9
+                                        ZIndex: =4
+
+                                "'Partner Code_DataCard2_5' As typedDataCard.numberEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_partnercode"
+                                    Default: =ThisItem.'Partner Code'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_partnercode")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =50
+                                    Required: =true
+                                    Update: =Value(DataCardValue14_6.Text)
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =1
+                                    ZIndex: =1
+
+                                    DataCardKey14_6 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName
+                                        Width: =276.33
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue14_6 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Format: =TextFormat.Number
+                                        Height: =30
+                                        HintText: ="Enter  4 digit number "
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =7
+                                        ZIndex: =2
+
+                                    ErrorMessage10_8 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue14_6.Y + DataCardValue14_6.Height
+                                        ZIndex: =3
+
+                                    StarVisible10_8 As label:
+                                        Align: =Align.Center
+                                        Color: =RGBA(255, 0, 0, 1)
+                                        Height: =DataCardKey14_6.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =9
+                                        ZIndex: =4
+
+                                "'All Partners Allocation_DataCard2_5' As typedDataCard.numberEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_allpartnersallocation"
+                                    Default: =ThisItem.'All Partners Allocation'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allpartnersallocation")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =30
+                                    Required: =false
+                                    Update: =Value(DataCardValue19_6.Text)
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =2
+                                    ZIndex: =1
+
+                                    DataCardKey19_6 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName & "(%)"
+                                        Width: =276.33
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue19_6 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Format: =TextFormat.Number
+                                        Height: =30
+                                        HintText: ="Enter Percentage"
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =7
+                                        ZIndex: =2
+
+                                    ErrorMessage15_6 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue19_6.Y + DataCardValue19_6.Height
+                                        ZIndex: =3
+
+                                    StarVisible15_6 As label:
+                                        Align: =Align.Center
+                                        Height: =DataCardKey19_6.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =DataCardKey19_6.Y
+                                        ZIndex: =4
+
+                                "'All CareClub Allocation_DataCard2_5' As typedDataCard.numberEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_allcarecluballocation"
+                                    Default: =ThisItem.'All CareClub Allocation'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allcarecluballocation")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =50
+                                    Required: =false
+                                    Update: =Value(DataCardValue18_6.Text)
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =3
+                                    ZIndex: =1
+
+                                    DataCardKey18_6 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName & "(%)"
+                                        Width: =276.33
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue18_6 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Format: =TextFormat.Number
+                                        Height: =30
+                                        HintText: ="Enter Percentage"
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =7
+                                        ZIndex: =2
+
+                                    ErrorMessage14_6 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue18_6.Y + DataCardValue18_6.Height
+                                        ZIndex: =3
+
+                                    StarVisible14_6 As label:
+                                        Align: =Align.Center
+                                        Height: =DataCardKey18_6.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =DataCardKey18_6.Y
+                                        ZIndex: =4
+
+                                "'All Nutrition Allocation_DataCard2_5' As typedDataCard.numberEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_allnutritionallocation"
+                                    Default: =ThisItem.'All Nutrition Allocation'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allnutritionallocation")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =50
+                                    Required: =false
+                                    Update: =Value(DataCardValue17_6.Text)
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =4
+                                    ZIndex: =1
+
+                                    DataCardKey17_6 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName & "(%)"
+                                        Width: =276.33
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue17_6 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Format: =TextFormat.Number
+                                        Height: =30
+                                        HintText: ="Enter Percentage"
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =7
+                                        ZIndex: =2
+
+                                    ErrorMessage13_6 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue17_6.Y + DataCardValue17_6.Height
+                                        ZIndex: =3
+
+                                    StarVisible13_6 As label:
+                                        Align: =Align.Center
+                                        Height: =DataCardKey17_6.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =DataCardKey17_6.Y
+                                        ZIndex: =4
+
+                                "'All Parasite Allocation_DataCard2_5' As typedDataCard.numberEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_allparasiteallocation"
+                                    Default: =ThisItem.'All Parasite Allocation'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allparasiteallocation")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =50
+                                    Required: =false
+                                    Update: =Value(DataCardValue16_6.Text)
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =5
+                                    ZIndex: =1
+
+                                    DataCardKey16_6 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName & "(%)"
+                                        Width: =276.33
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue16_6 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Format: =TextFormat.Number
+                                        Height: =30
+                                        HintText: ="Enter Percentage"
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =7
+                                        ZIndex: =2
+
+                                    ErrorMessage12_7 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue16_6.Y + DataCardValue16_6.Height
+                                        ZIndex: =3
+
+                                    StarVisible12_7 As label:
+                                        Align: =Align.Center
+                                        Height: =DataCardKey16_6.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =DataCardKey16_6.Y
+                                        ZIndex: =4
+
+                                Logo_DataCard1_4 As typedDataCard.addLargePictureCard:
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_logo"
+                                    Default: =ThisItem.Logo
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_logo")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =162
+                                    Required: =false
+                                    Update: =Image1_7.Image
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =6
+                                    ZIndex: =1
+
+                                    DataCardKey3_4 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName
+                                        Width: =240.19
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =76
+                                        ZIndex: =1
+
+                                    ErrorMessage7_4 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =600.47
+                                        X: =21.34
+                                        Y: =Image1_7.Y + Image1_7.Height
+                                        ZIndex: =4
+
+                                    StarVisible7_4 As label:
+                                        Align: =Align.Center
+                                        Height: =DataCardKey3_4.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =DataCardKey3_4.Y
+                                        ZIndex: =5
+
+                                    Image1_7 As image:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        DisplayMode: =Parent.DisplayMode
+                                        Height: =157
+                                        Image: |-
+                                            =If(
+                                                IsBlank(AddPicture1_7.Media),
+                                                If(
+                                                    IsBlankOrError(
+                                                        LookUp(
+                                                            'Partner Codess',
+                                                            'Partner Name' = g_CurrentSelectedPartners
+                                                        ).Logo.Value
+                                                    ),
+                                                    ImageBG_1,
+                                                    LookUp(
+                                                        'Partner Codess',
+                                                        'Partner Name' = g_CurrentSelectedPartners
+                                                    ).Logo.Value
+                                                ),
+                                                AddPicture1_7.Media
+                                            )
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =175.73
+                                        X: =250
+                                        Y: =10
+                                        ZIndex: =6
+
+                                    AddPicture1_7 As addMedia:
+                                        BorderColor: =RGBA(230, 230, 230, 1)
+                                        Fill: =RGBA(204, 204, 204, 1)
+                                        Height: =49
+                                        Padding: =10
+                                        Size: =14.23
+                                        Text: ="+"
+                                        Width: =42
+                                        X: =461
+                                        Y: =64
+                                        ZIndex: =7
+
+                                "'Key Contact Name_DataCard1_4' As typedDataCard.textualEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_keycontactname"
+                                    Default: =ThisItem.'Key Contact Name'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_keycontactname")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =50
+                                    MaxLength: =DataSourceInfo([@'Partner Codess'], DataSourceInfo.MaxLength, "cr8b3_keycontactname")
+                                    Required: =false
+                                    Update: =DataCardValue3_4.Text
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =7
+                                    ZIndex: =1
+
+                                    DataCardKey11_4 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName
+                                        Width: =276.33
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue3_4 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Height: =30
+                                        HintText: ="Enter Key Contact Name"
+                                        MaxLength: =Parent.MaxLength
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =7
+                                        ZIndex: =2
+
+                                    ErrorMessage11_9 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue3_4.Y + DataCardValue3_4.Height
+                                        ZIndex: =3
+
+                                    StarVisible11_9 As label:
+                                        Align: =Align.Center
+                                        Height: =DataCardKey11_4.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =DataCardKey11_4.Y
+                                        ZIndex: =4
+
+                                "'Key Contact Email_DataCard1_4' As typedDataCard.textualEditCard":
+                                    BorderColor: =RGBA(230, 230, 230, 1)
+                                    BorderStyle: =BorderStyle.Solid
+                                    DataField: ="cr8b3_keycontactemail"
+                                    Default: =ThisItem.'Key Contact Email'
+                                    DisplayMode: =Parent.DisplayMode
+                                    DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_keycontactemail")
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Height: =50
+                                    MaxLength: =DataSourceInfo([@'Partner Codess'], DataSourceInfo.MaxLength, "cr8b3_keycontactemail")
+                                    Required: =false
+                                    Update: =DataCardValue2_4.Text
+                                    Width: =Parent.Width
+                                    WidthFit: =true
+                                    X: =0
+                                    Y: =8
+                                    ZIndex: =1
+
+                                    DataCardKey10_4 As label:
+                                        AutoHeight: =true
+                                        Height: =34
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: =Parent.DisplayName
+                                        Width: =276.33
+                                        Wrap: =false
+                                        X: =21.34
+                                        Y: =9
+                                        ZIndex: =1
+
+                                    DataCardValue2_4 As text:
+                                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                        Default: =Parent.Default
+                                        DelayOutput: =true
+                                        DisplayMode: =Parent.DisplayMode
+                                        Height: =30
+                                        HintText: ="Enter Key Contact Email"
+                                        MaxLength: =Parent.MaxLength
+                                        PaddingLeft: =5
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        RadiusBottomLeft: =0
+                                        RadiusBottomRight: =0
+                                        RadiusTopLeft: =0
+                                        RadiusTopRight: =0
+                                        Size: =9.25
+                                        Tooltip: =Parent.DisplayName
+                                        Width: =360
+                                        X: =250
+                                        Y: =7
+                                        ZIndex: =2
+
+                                    ErrorMessage10_9 As label:
+                                        AutoHeight: =true
+                                        Height: =10
+                                        Live: =Live.Assertive
+                                        PaddingBottom: =0
+                                        PaddingLeft: =0
+                                        PaddingRight: =0.00
+                                        PaddingTop: =0.00
+                                        Size: =9.96
+                                        Text: =Parent.Error
+                                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                        Width: =690.83
+                                        X: =21.34
+                                        Y: =DataCardValue2_4.Y + DataCardValue2_4.Height
+                                        ZIndex: =3
+
+                                    StarVisible10_9 As label:
+                                        Align: =Align.Center
+                                        Height: =DataCardKey10_4.Height
+                                        PaddingRight: =3.56
+                                        PaddingTop: =3.56
+                                        Size: =9.25
+                                        Text: ="*"
+                                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                        Width: =21.34
+                                        Wrap: =false
+                                        X: =0.00
+                                        Y: =DataCardKey10_4.Y
+                                        ZIndex: =4
+

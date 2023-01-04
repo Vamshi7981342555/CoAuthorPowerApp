@@ -1,0 +1,117 @@
+"'Home Screen' As screen":
+
+    ImageBG As image:
+        Height: =768
+        Image: =bg
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =1365.29
+        X: =0.00
+        ZIndex: =16
+
+    ImageMVH As image:
+        Height: =229
+        Image: ='mvh-logo'
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =162.92
+        X: =872.96
+        Y: =44
+        ZIndex: =17
+
+    btnTrackingCode As button:
+        Color: =RGBA(56, 96, 178, 1)
+        DisabledBorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        Font: =Font.'Lato Light'
+        Height: =153
+        OnSelect: =Navigate('OLd_Landing Screen')
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =21.34
+        Text: ="Tracking Code"
+        Width: =213.44
+        X: =847.35
+        Y: =265
+        ZIndex: =21
+
+    btnCampaign As button:
+        Color: =RGBA(56, 96, 178, 1)
+        DisabledBorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        Font: =Font.'Lato Light'
+        Height: =145
+        OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =21.34
+        Text: ="Campaign"
+        Width: =213.44
+        X: =1121.97
+        Y: =273
+        ZIndex: =22
+
+    btnPartnerCode As button:
+        Color: =RGBA(56, 96, 178, 1)
+        DisabledBorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        Font: =Font.'Lato Light'
+        Height: =153
+        OnSelect: =Navigate('Old_Partner Code Screen')
+        PaddingRight: =3.56
+        PaddingTop: =3.56
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =21.34
+        Text: ="Partner Code"
+        Width: =213.44
+        X: =976.12
+        Y: =468
+        ZIndex: =23
+
+    icnPartnerCode As icon.People:
+        Color: =RGBA(102, 113, 166, 1)
+        Height: =36
+        Icon: =Icon.People
+        OnSelect: =Navigate('Old_Partner Code Screen')
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =36
+        X: =1060
+        Y: =573
+        ZIndex: =24
+
+    icnCampaign As icon.Calendar:
+        Color: =RGBA(102, 113, 166, 1)
+        Height: =36
+        Icon: =Icon.AddToCalendar
+        OnSelect: =Navigate('Old_Campaign and SubCampaign Code')
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =36
+        X: =1199
+        Y: =366
+        ZIndex: =25
+
+    icnTrackingCode As icon.CollapseView:
+        Color: =RGBA(102, 113, 166, 1)
+        Height: =36
+        Icon: =Icon.CollapseView
+        OnSelect: =Navigate('OLd_Landing Screen')
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =36
+        X: =930
+        Y: =366
+        ZIndex: =26
+

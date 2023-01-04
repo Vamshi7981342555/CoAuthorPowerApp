@@ -1,0 +1,108 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr8b3_partnercodeses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr8b3_partnercodes",
+    "MaxGetRowsCount": 500,
+    "Name": "Partner Codess_1",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr8b3_allcarecluballocation": "All CareClub Allocation",
+      "cr8b3_allnutritionallocation": "All Nutrition Allocation",
+      "cr8b3_allparasiteallocation": "All Parasite Allocation",
+      "cr8b3_allpartnersallocation": "All Partners Allocation",
+      "cr8b3_cr8b3_trackingcodes_PartnerName_cr8b3_par": "Tracking Codes",
+      "cr8b3_keycontactemail": "Key Contact Email",
+      "cr8b3_keycontactname": "Key Contact Name",
+      "cr8b3_logo": "Logo",
+      "cr8b3_logoid": "cr8b3_LogoId",
+      "cr8b3_name": "Name",
+      "cr8b3_partnercode": "Partner Code",
+      "cr8b3_partnercodes_AsyncOperations": "System Jobs",
+      "cr8b3_partnercodes_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr8b3_partnercodes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr8b3_partnercodes_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr8b3_partnercodes_ProcessSession": "Process Sessions",
+      "cr8b3_partnercodes_SyncErrors": "Sync Errors",
+      "cr8b3_partnercodesid": "Partner Codes",
+      "cr8b3_partnername": "Partner Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_itemtype": "Item Type",
+      "new_title": "Title",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Partner Codess_1",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Partner Codess_1 (Views)",
+    "Name": "_cr8b3_partnercodes_views",
+    "RelatedEntityName": "Partner Codess_1",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "44f733fc-5a64-4eba-9661-693f3864da6a": "Partner Codes Associated View",
+      "6ef5f14f-458a-4cee-985c-7d426c74003f": "Partner Codes Lookup View",
+      "81745a92-18b7-4854-982b-6dca45915042": "Active Partner Codess",
+      "9d4d6c44-038e-4b9b-b2c3-86c89dbf6c36": "Inactive Partner Codess",
+      "f11cf4fb-e3a0-413e-8041-3d529d17a678": "Partner Codes Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Partner Codess_1)",
+    "Name": "cr8b3_partnercodes_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Partner Codess_1"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Partner Codess_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Partner Codess_1)",
+    "Name": "cr8b3_partnercodes_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Partner Codess_1"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Partner Codess_1",
+    "Type": "OptionSetInfo"
+  }
+]

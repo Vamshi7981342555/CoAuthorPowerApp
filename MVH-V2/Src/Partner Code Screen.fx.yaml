@@ -1,0 +1,1286 @@
+"'Partner Code Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    Canvas4 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
+        ZIndex: =3
+
+        DataCard3 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =766
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Header_MVH_4 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =8
+
+                rect_BG_6 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =53
+                    Width: =1366
+                    X: =0.00
+                    ZIndex: =1
+
+                LogoMVH_6 As image:
+                    Height: =53
+                    Image: ='mvh-logo'
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =74
+                    X: =19.21
+                    ZIndex: =2
+
+                Menubar_6 As icon.Hamburger:
+                    BorderColor: =RGBA(128, 128, 128, 1)
+                    Height: =14
+                    Icon: =Icon.Hamburger
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =14
+                    X: =192.81
+                    Y: =24
+                    ZIndex: =3
+
+                ImgStatus_6 As image:
+                    Height: =33
+                    Image: =User().Image
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =25
+                    RadiusBottomRight: =25
+                    RadiusTopLeft: =25
+                    RadiusTopRight: =25
+                    Width: =35
+                    X: =1312.64
+                    Y: =9
+                    ZIndex: =4
+
+                lblNitin_6 As label:
+                    Font: =Font.Lato
+                    Height: =27
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: =User().FullName
+                    Width: =106
+                    X: =1205.92
+                    Y: =14
+                    ZIndex: =5
+
+                icnNotification_6 As icon.Bell:
+                    Color: =RGBA(39, 113, 194, 1)
+                    Height: =24
+                    Icon: =Icon.Bell
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =26
+                    X: =1158.25
+                    Y: =14
+                    ZIndex: =6
+
+                RectStraightLine_6 As rectangle:
+                    Fill: =RGBA(9, 33, 98, 1)
+                    Height: =1
+                    Width: =1366
+                    X: =0.00
+                    Y: =53
+                    ZIndex: =7
+
+            Rect_BG_1 As rectangle:
+                Fill: =RGBA(240, 240, 240, 1)
+                Height: =711
+                Width: =1148
+                X: =218
+                Y: =55
+                ZIndex: =24
+
+            "'Vertical_Menu Bar_Partner Screen_1' As group":
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =-43
+                ZIndex: =24
+
+                Rectangle8_14 As rectangle:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =53
+                    OnSelect: =Navigate('Landing Screen')
+                    Width: =218.42
+                    Y: =108
+                    ZIndex: =8
+
+                Rectangle1_14 As rectangle:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =26
+                    OnSelect: =Navigate('Landing Screen')
+                    Width: =2.13
+                    X: =19
+                    Y: =122
+                    ZIndex: =9
+
+                Icon1_13 As icon.CollapseView:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =26
+                    Icon: =Icon.CollapseView
+                    OnSelect: =Navigate('Landing Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =18.50
+                    X: =36
+                    Y: =122
+                    ZIndex: =10
+
+                Label1_13 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Landing Screen')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Tracking Code"
+                    Width: =106.72
+                    X: =69
+                    Y: =115
+                    ZIndex: =11
+
+                Rectangle8_15 As rectangle:
+                    Fill: =RGBA(0, 0, 160, 1)
+                    Height: =53
+                    Width: =218.42
+                    Y: =215
+                    ZIndex: =12
+
+                Rectangle1_15 As rectangle:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =26
+                    Width: =2.13
+                    X: =19
+                    Y: =228
+                    ZIndex: =13
+
+                Label1_14 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.Lato
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Partner Code"
+                    Width: =106.72
+                    X: =69
+                    Y: =221
+                    ZIndex: =14
+
+                Icon3_5 As icon.People:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =26
+                    Icon: =Icon.People
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =18.50
+                    X: =37
+                    Y: =230
+                    ZIndex: =15
+
+                RectAllCampaign_1 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =53
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    Width: =218.42
+                    Y: =162
+                    ZIndex: =16
+
+                Rect1_1 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    Width: =2.13
+                    X: =19
+                    Y: =175
+                    ZIndex: =17
+
+                iconCampaign_1 As icon.Calendar:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =28
+                    Icon: =Icon.AddToCalendar
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =19.92
+                    X: =34
+                    Y: =174
+                    ZIndex: =18
+
+                lblCampaign_1 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Campaign"
+                    Width: =106.72
+                    X: =69
+                    Y: =168
+                    ZIndex: =19
+
+                Rectangle8_33 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =53
+                    OnSelect: =Navigate('Welcome Screen')
+                    Width: =218.42
+                    Y: =55
+                    ZIndex: =20
+
+                Rectangle1_33 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Welcome Screen')
+                    Width: =2.13
+                    X: =19
+                    Y: =75
+                    ZIndex: =21
+
+                Label1_33 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Welcome Screen')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Welcome Screen"
+                    Width: =106.72
+                    X: =66
+                    Y: =64
+                    ZIndex: =22
+
+                Icon1_12 As icon.Home:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =28
+                    Icon: =Icon.Home
+                    OnSelect: =Navigate('Welcome Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =19.92
+                    X: =36
+                    Y: =70
+                    ZIndex: =23
+
+            lblPartnerCode_3 As label:
+                Color: =RGBA(68, 68, 68, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =38
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Text: ="Partner Code"
+                Width: =149.41
+                X: =272
+                Y: =61
+                ZIndex: =25
+
+            btnCreateNewPartnerCode_1 As button:
+                BorderStyle: =BorderStyle.None
+                Fill: =RGBA(0, 0, 160, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Normal
+                Height: =43
+                OnSelect: |-
+                    =ResetForm(Form2_2);NewForm(Form2_2);Set(varGalDefault,Blank());Set(varGalDefault,{});UpdateContext({_showPartner:true})
+                PaddingLeft: =35
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Size: =9.25
+                Text: ="Create New Partner Code"
+                Width: =183.56
+                X: =1151
+                Y: =59
+                ZIndex: =26
+
+            icnAdd_1 As icon.Add:
+                Color: =RGBA(136, 160, 209, 1)
+                Height: =23
+                Icon: =Icon.Add
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =16.36
+                X: =1173
+                Y: =68
+                ZIndex: =27
+
+            Txtinp_Search_1 As text:
+                BorderColor: =RGBA(179, 179, 179, 1)
+                BorderThickness: =1
+                Default: =""
+                Height: =45
+                HintText: =" Search"
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Width: =377.78
+                X: =538
+                Y: =59
+                ZIndex: =28
+
+            icnSearch_1 As icon.Search:
+                Height: =33
+                Icon: =Icon.Search
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =29.88
+                X: =886
+                Y: =66
+                ZIndex: =29
+
+            RectStraightLine1_1 As rectangle:
+                Fill: =RGBA(128, 128, 128, 1)
+                Height: =1
+                Width: =1072.17
+                X: =275
+                Y: =109
+                ZIndex: =30
+
+            "TemplateGalleryList1_2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+                Default: =varGalDefault
+                Height: =600
+                Items: |-
+                    =Search(
+                        AddColumns(
+                            Sort(
+                                'Partner Codess',
+                                'Modified On',
+                                Descending
+                            ),
+                            "PartnerName",
+                            cr8b3_partnername,
+                            "PartnerCode",
+                            Text(cr8b3_partnercode)
+                        ),
+                        Txtinp_Search_1.Text,
+                        "PartnerName",
+                        "PartnerCode"
+                    )
+                Layout: =Layout.Vertical
+                OnSelect: |-
+                    =Set(
+                        g_CurrentSelectedPartners,
+                        TemplateGalleryList1_2.Selected.'Partner Name'
+                    );
+                ShowScrollbar: =false
+                TemplateFill: = RGBA(0, 0, 0, 0)
+                TemplatePadding: =10
+                TemplateSize: =85
+                Width: =262.53
+                X: =284
+                Y: =108
+                ZIndex: =31
+
+                btn_BG_1 As button:
+                    BorderThickness: =0
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(230, 230, 230, 1)
+                    Height: =79
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    RadiusBottomLeft: =12
+                    RadiusBottomRight: =12
+                    RadiusTopLeft: =12
+                    RadiusTopRight: =12
+                    Size: =10.67
+                    Text: =""
+                    Width: =241
+                    X: =1
+                    Y: =6
+                    ZIndex: =1
+
+                lblpartName1_1 As label:
+                    Color: =RGBA(9, 33, 98, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =9.96
+                    Text: =ThisItem.'Partner Name'
+                    Width: =113.83
+                    X: =9.96
+                    Y: =38
+                    ZIndex: =2
+
+                lblCodeNo_1 As label:
+                    Color: =RGBA(9, 33, 98, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =9.96
+                    Text: =ThisItem.'Partner Code'
+                    Width: =85.38
+                    X: =125.93
+                    Y: =38
+                    ZIndex: =3
+
+                NextArrow3_2 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Height: =32
+                    Icon: =Icon.ChevronRight
+                    OnSelect: |-
+                        =Select(Parent);ResetForm(Form2_1);EditForm(Form2_1);UpdateContext({_showPartner:true})
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =7.11
+                    PaddingTop: =7.11
+                    TabIndex: =0
+                    Tooltip: ="View item details"
+                    Width: =22.77
+                    X: =206.32
+                    Y: =22
+                    ZIndex: =4
+
+                lblPartName_1 As label:
+                    Color: =RGBA(116, 116, 116, 1)
+                    FontWeight: =FontWeight.Normal
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =8.54
+                    Text: ="Partner Name"
+                    Width: =91.78
+                    X: =9.96
+                    Y: =4
+                    ZIndex: =5
+
+                lblPartnerCod_1 As label:
+                    Color: =RGBA(116, 116, 116, 1)
+                    FontWeight: =FontWeight.Normal
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =8.54
+                    Text: ="Partner Code"
+                    Width: =80.39
+                    X: =125.93
+                    Y: =4
+                    ZIndex: =6
+
+            lbl_NewRecord_1 As label:
+                Height: =51
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Text: =If(Form2_1.Mode = FormMode.New,"Create New Partner Code","  View\Update Existing Partner Code")
+                Width: =566
+                X: =569
+                Y: =111
+                ZIndex: =32
+
+            Button4_2 As button:
+                Fill: =RGBA(0, 0, 160, 1)
+                Height: =30
+                OnSelect: =SubmitForm(Form2_2);Notify("Record Submitted Successfully",NotificationType.Success,5000)
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Size: =9.96
+                Text: ="Submit"
+                Visible: =Form2_1.Mode <> FormMode.View
+                Width: =113.83
+                X: =1221
+                Y: =118
+                ZIndex: =33
+
+    Form2_2 As form:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        DataSource: ='Partner Codess'
+        Fill: =RGBA(240, 240, 240, 1)
+        Height: =582
+        Item: =LookUp('Partner Codess','Partner Name'=g_CurrentSelectedPartners)
+        NumberOfColumns: =1
+        OnSuccess: =ResetForm(Form2_2);ViewForm(Form2_2);Set(varGalDefault,Form2_2.LastSubmit)
+        Width: =744.19
+        X: =585
+        Y: =150
+        ZIndex: =4
+
+        "'Partner Name_DataCard2_2' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_partnername"
+            Default: =ThisItem.'Partner Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_partnername")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Partner Codess'], DataSourceInfo.MaxLength, "cr8b3_partnername")
+            Required: =true
+            Update: =DataCardValue15_2.Text
+            Width: =744
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey15_2 As label:
+                Height: =25
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =179
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue15_2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =30
+                HintText: ="Enter Name"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =6
+                ZIndex: =2
+
+            ErrorMessage11_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue15_2.Y + DataCardValue15_2.Height
+                ZIndex: =3
+
+            StarVisible11_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =DataCardKey15_2.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =9
+                ZIndex: =4
+
+        "'Partner Code_DataCard2_2' As typedDataCard.numberEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_partnercode"
+            Default: =ThisItem.'Partner Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_partnercode")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =Value(DataCardValue14_2.Text)
+            Width: =744
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey14_2 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =276.33
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue14_2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =30
+                HintText: ="Enter  4 digit number "
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage10_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue14_2.Y + DataCardValue14_2.Height
+                ZIndex: =3
+
+            StarVisible10_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =DataCardKey14_2.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =9
+                ZIndex: =4
+
+        "'All Partners Allocation_DataCard2_2' As typedDataCard.numberEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_allpartnersallocation"
+            Default: =ThisItem.'All Partners Allocation'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allpartnersallocation")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =30
+            Required: =false
+            Update: =Value(DataCardValue19_2.Text)
+            Width: =744
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey19_2 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName & "(%)"
+                Width: =276.33
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue19_2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =30
+                HintText: ="Enter Percentage"
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage15_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue19_2.Y + DataCardValue19_2.Height
+                ZIndex: =3
+
+            StarVisible15_2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey19_2.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey19_2.Y
+                ZIndex: =4
+
+        "'All CareClub Allocation_DataCard2_2' As typedDataCard.numberEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_allcarecluballocation"
+            Default: =ThisItem.'All CareClub Allocation'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allcarecluballocation")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue18_2.Text)
+            Width: =744
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey18_2 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName & "(%)"
+                Width: =276.33
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue18_2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =30
+                HintText: ="Enter Percentage"
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage14_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue18_2.Y + DataCardValue18_2.Height
+                ZIndex: =3
+
+            StarVisible14_2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey18_2.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey18_2.Y
+                ZIndex: =4
+
+        "'All Nutrition Allocation_DataCard2_2' As typedDataCard.numberEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_allnutritionallocation"
+            Default: =ThisItem.'All Nutrition Allocation'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allnutritionallocation")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue17_2.Text)
+            Width: =744
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey17_2 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName & "(%)"
+                Width: =276.33
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue17_2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =30
+                HintText: ="Enter Percentage"
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage13_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue17_2.Y + DataCardValue17_2.Height
+                ZIndex: =3
+
+            StarVisible13_2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey17_2.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey17_2.Y
+                ZIndex: =4
+
+        "'All Parasite Allocation_DataCard2_2' As typedDataCard.numberEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_allparasiteallocation"
+            Default: =ThisItem.'All Parasite Allocation'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_allparasiteallocation")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue16_2.Text)
+            Width: =744
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey16_2 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName & "(%)"
+                Width: =276.33
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue16_2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =30
+                HintText: ="Enter Percentage"
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage12_3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue16_2.Y + DataCardValue16_2.Height
+                ZIndex: =3
+
+            StarVisible12_3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey16_2.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey16_2.Y
+                ZIndex: =4
+
+        Logo_DataCard1_1 As typedDataCard.addLargePictureCard:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_logo"
+            Default: =ThisItem.Logo
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_logo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =162
+            Required: =false
+            Update: =Image1_3.Image
+            Width: =744
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey3_1 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =240.19
+                Wrap: =false
+                X: =21.34
+                Y: =76
+                ZIndex: =1
+
+            ErrorMessage7_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =600.47
+                X: =21.34
+                Y: =Image1_3.Y + Image1_3.Height
+                ZIndex: =4
+
+            StarVisible7_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3_1.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey3_1.Y
+                ZIndex: =5
+
+            Image1_3 As image:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =157
+                Image: |-
+                    =If(
+                        IsBlank(AddPicture1_3.Media),
+                        If(
+                            IsBlankOrError(
+                                LookUp(
+                                    'Partner Codess',
+                                    'Partner Name' = g_CurrentSelectedPartners
+                                ).Logo.Value
+                            ),
+                            ImageBG_1,
+                            LookUp(
+                                'Partner Codess',
+                                'Partner Name' = g_CurrentSelectedPartners
+                            ).Logo.Value
+                        ),
+                        AddPicture1_3.Media
+                    )
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Tooltip: =Parent.DisplayName
+                Width: =175.73
+                X: =250
+                Y: =10
+                ZIndex: =6
+
+            AddPicture1_3 As addMedia:
+                BorderColor: =RGBA(230, 230, 230, 1)
+                Fill: =RGBA(204, 204, 204, 1)
+                Height: =49
+                Padding: =10
+                Size: =14.23
+                Text: ="+"
+                Width: =42
+                X: =461
+                Y: =64
+                ZIndex: =7
+
+        "'Key Contact Name_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_keycontactname"
+            Default: =ThisItem.'Key Contact Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_keycontactname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Partner Codess'], DataSourceInfo.MaxLength, "cr8b3_keycontactname")
+            Required: =false
+            Update: =DataCardValue3_1.Text
+            Width: =744
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey11_1 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =276.33
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue3_1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =30
+                HintText: ="Enter Key Contact Name"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage11_3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue3_1.Y + DataCardValue3_1.Height
+                ZIndex: =3
+
+            StarVisible11_3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey11_1.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey11_1.Y
+                ZIndex: =4
+
+        "'Key Contact Email_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr8b3_keycontactemail"
+            Default: =ThisItem.'Key Contact Email'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Partner Codess'],DataSourceInfo.DisplayName,"cr8b3_keycontactemail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Partner Codess'], DataSourceInfo.MaxLength, "cr8b3_keycontactemail")
+            Required: =false
+            Update: =DataCardValue2_1.Text
+            Width: =744
+            X: =0
+            Y: =8
+            ZIndex: =1
+
+            DataCardKey10_1 As label:
+                AutoHeight: =true
+                Height: =34
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: =Parent.DisplayName
+                Width: =276.33
+                Wrap: =false
+                X: =21.34
+                Y: =9
+                ZIndex: =1
+
+            DataCardValue2_1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =30
+                HintText: ="Enter Key Contact Email"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =9.25
+                Tooltip: =Parent.DisplayName
+                Width: =360
+                X: =250
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage10_3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =9.96
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =690.83
+                X: =21.34
+                Y: =DataCardValue2_1.Y + DataCardValue2_1.Height
+                ZIndex: =3
+
+            StarVisible10_3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey10_1.Height
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =9.25
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =21.34
+                Wrap: =false
+                X: =0.00
+                Y: =DataCardKey10_1.Y
+                ZIndex: =4
+

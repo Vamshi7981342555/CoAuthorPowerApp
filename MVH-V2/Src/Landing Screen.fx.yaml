@@ -1,0 +1,851 @@
+"'Landing Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        ZIndex: =3
+
+        DataCard6 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =768
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Header_MVH_5 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =8
+
+                rect_BG_7 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =53
+                    Width: =1366
+                    X: =0.00
+                    ZIndex: =1
+
+                LogoMVH_7 As image:
+                    Height: =23
+                    Image: ='mvh-logo'
+                    PaddingRight: =100
+                    PaddingTop: =0.00
+                    Width: =170
+                    Y: =15
+                    ZIndex: =2
+
+                Menubar_7 As icon.Hamburger:
+                    BorderColor: =RGBA(128, 128, 128, 1)
+                    Height: =14
+                    Icon: =Icon.Hamburger
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =14
+                    X: =192.81
+                    Y: =24
+                    ZIndex: =3
+
+                ImgStatus_7 As image:
+                    Height: =33
+                    Image: =User().Image
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =25
+                    RadiusBottomRight: =25
+                    RadiusTopLeft: =25
+                    RadiusTopRight: =25
+                    Width: =35
+                    X: =1312.64
+                    Y: =9
+                    ZIndex: =4
+
+                lblNitin_7 As label:
+                    Font: =Font.Lato
+                    Height: =27
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: =User().FullName
+                    Width: =106
+                    X: =1205.92
+                    Y: =14
+                    ZIndex: =5
+
+                icnNotification_7 As icon.Bell:
+                    Color: =RGBA(39, 113, 194, 1)
+                    Height: =24
+                    Icon: =Icon.Bell
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =26
+                    X: =1158.25
+                    Y: =14
+                    ZIndex: =6
+
+                RectStraightLine_7 As rectangle:
+                    Fill: =RGBA(9, 33, 98, 1)
+                    Height: =1
+                    Width: =1366
+                    X: =0.00
+                    Y: =53
+                    ZIndex: =7
+
+            lblTrackingCode_3 As label:
+                Color: =RGBA(68, 68, 68, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =38
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Text: ="Tracking Code"
+                Width: =149.41
+                X: =245
+                Y: =67
+                ZIndex: =25
+
+            Vertical_Menu_Bar_1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =26
+
+                Rectangle8_36 As rectangle:
+                    Fill: =RGBA(0, 0, 160, 1)
+                    Height: =53
+                    OnSelect: =Navigate('Landing Screen')
+                    Width: =218.42
+                    Y: =111
+                    ZIndex: =9
+
+                Rectangle1_36 As rectangle:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Landing Screen')
+                    Width: =2.13
+                    X: =19
+                    Y: =123
+                    ZIndex: =10
+
+                Icon1_14 As icon.CollapseView:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =26
+                    Icon: =Icon.CollapseView
+                    OnSelect: =Navigate('Landing Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =18.50
+                    X: =36
+                    Y: =123
+                    ZIndex: =11
+
+                Label1_36 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    Height: =26
+                    OnSelect: =Navigate('Landing Screen')
+                    Size: =9.25
+                    Text: ="Tracking Code"
+                    Width: =106.72
+                    X: =69
+                    Y: =123
+                    ZIndex: =12
+
+                Rectangle8_35 As rectangle:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =53
+                    OnSelect: =Navigate('Partner Code Screen')
+                    Width: =218.42
+                    Y: =215
+                    ZIndex: =13
+
+                Rectangle1_35 As rectangle:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =26
+                    OnSelect: =Navigate('Partner Code Screen')
+                    Width: =2.13
+                    X: =19
+                    Y: =234
+                    ZIndex: =14
+
+                Label1_35 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Partner Code Screen')
+                    Size: =9.25
+                    Text: ="Partner Code"
+                    Width: =106.72
+                    X: =69
+                    Y: =227
+                    ZIndex: =15
+
+                Icon3_10 As icon.People:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =26
+                    Icon: =Icon.People
+                    OnSelect: =Navigate('Partner Code Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =18.50
+                    X: =37
+                    Y: =234
+                    ZIndex: =16
+
+                Rectangle8_34 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =53
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    Width: =218.42
+                    Y: =159
+                    ZIndex: =17
+
+                Rectangle1_34 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    Width: =2.13
+                    X: =19
+                    Y: =178
+                    ZIndex: =18
+
+                Label1_34 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    Size: =9.25
+                    Text: ="Campaign"
+                    Width: =106.72
+                    X: =69
+                    Y: =171
+                    ZIndex: =19
+
+                Icon2_10 As icon.Calendar:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =26
+                    Icon: =Icon.AddToCalendar
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =19.92
+                    X: =34
+                    Y: =178
+                    ZIndex: =20
+
+                Rectangle8_37 As rectangle:
+                    Fill: = RGBA(252, 252, 252, 1)
+                    Height: =53
+                    OnSelect: =Navigate('Welcome Screen')
+                    Width: =218.42
+                    Y: =54
+                    ZIndex: =21
+
+                Rectangle1_37 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Welcome Screen')
+                    Width: =2.13
+                    X: =17
+                    Y: =66
+                    ZIndex: =22
+
+                Label1_37 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Welcome Screen')
+                    Size: =9.25
+                    Text: ="Welcome Screen"
+                    Width: =106.72
+                    X: =69
+                    Y: =60
+                    ZIndex: =23
+
+                Icon1_15 As icon.Home:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =26
+                    Icon: =Icon.Home
+                    OnSelect: =Navigate('Welcome Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =19.92
+                    X: =34
+                    Y: =67
+                    ZIndex: =24
+
+            btnCreateNewPartnerCode_5 As button:
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 18, 107, 1)
+                Fill: =RGBA(215, 223, 240, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Normal
+                Height: =43
+                OnSelect: |-
+                    =Refresh('Tracking Codes');
+                    Set(
+                        varTrackingTempCode,
+                        Value(
+                            First(
+                                Sort(
+                                    Filter(
+                                        'Tracking Codes',
+                                        true
+                                    ),
+                                    'Created On',
+                                    Descending
+                                )
+                            ).'Tracking Code'
+                        ) + 1
+                    );
+                    ResetForm(Form2_5);
+                    NewForm(Form2_5);
+                    Set(
+                        varGalDefault_2,
+                        Blank()
+                    );
+                    Set(
+                        varGalDefault_2,
+                        {}
+                    );
+                    UpdateContext({_showFormpopup_1: true})
+                PaddingLeft: =35
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Size: =9.25
+                Text: ="Create New Tracking Code"
+                Width: =183.56
+                X: =1159
+                Y: =63
+                ZIndex: =27
+
+            icnAdd_3 As icon.Add:
+                Color: =RGBA(136, 160, 209, 1)
+                Height: =23
+                Icon: =Icon.Add
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =16.36
+                X: =1169
+                Y: =75
+                ZIndex: =28
+
+            btnProcess_1 As button:
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 18, 107, 1)
+                DisplayMode: =If(IsBlankOrError(gallery_TrackingCode.Selected), DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(215, 223, 240, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Normal
+                Height: =43
+                OnSelect: |-
+                    =//Trackingcodeflow.Run(Value)
+                    Set(
+                        varRCTrackingCode,
+                        Trackingcodeflow.Run(varTracCode)
+                    );
+                    
+                    Patch(
+                        'Tracking Codes',
+                        First(
+                            Filter(
+                                'Tracking Codes',
+                                'Tracking Code' = varTracCode
+                            )
+                        ),
+                        {
+                            'Added to Concur': If(
+                                varRCTrackingCode.addtoconcur = "true",
+                                true,
+                                false
+                            )
+                        },
+                        {
+                            'Added to Oracle': If(
+                                varRCTrackingCode.addtocoupa = "true",
+                                true,
+                                false
+                            )
+                        },
+                        {
+                            'Added to Coupa': If(
+                                varRCTrackingCode.addtooracle = "true",
+                                true,
+                                false
+                            )
+                        }
+                    );
+                    
+                    Notify("Process Completed Successfully",NotificationType.Success,5000)
+                PaddingLeft: =35
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Size: =9.25
+                Text: ="Process"
+                Width: =96.05
+                X: =1050
+                Y: =63
+                ZIndex: =29
+
+            icnProcess_1 As icon.Sync:
+                Color: =RGBA(136, 160, 209, 1)
+                Height: =19
+                Icon: =Icon.Sync
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =13.52
+                X: =1061
+                Y: =75
+                ZIndex: =30
+
+            RectStLine_5 As rectangle:
+                Fill: =RGBA(116, 116, 116, 1)
+                Height: =1
+                Width: =1102.76
+                X: =245
+                Y: =113
+                ZIndex: =31
+
+            Txtinp_SearchBox_1 As text:
+                BorderStyle: =Solid
+                Color: =RGBA(116, 116, 116, 1)
+                Default: =""
+                Height: =47
+                HintText: ="Search"
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Width: =400
+                X: =490
+                Y: =60
+                ZIndex: =32
+
+            icn_Search_1 As icon.Search:
+                Height: =22
+                Icon: =Icon.Search
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =27.75
+                X: =846
+                Y: =71
+                ZIndex: =33
+
+            icn_Filter_1 As icon.FilterFlat:
+                Height: =19
+                Icon: =If(IsBlank(drpdown_TracCode.SelectedText.Value) && TxtMeetingName.Text = Blank(),Icon.FilterFlat,Icon.FilterFlatFilled)
+                OnSelect: |-
+                    =UpdateContext({_showFilterPopUp_1:true})
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =24.19
+                X: =1001
+                Y: =75
+                ZIndex: =34
+
+            "Horizontalgal_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+                BorderColor: =RGBA(219, 219, 219, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 160, 1)
+                Height: =48
+                Items: |-
+                    =[
+                        "Actions",
+                        "Tracking Code",    
+                        "Campaign >> Sub-Campaign",
+                        "Partner Name",
+                        "Added to Oracle?",
+                        "Added to Coupa?",
+                        "Added to Concur?",
+                        "Meeting Number",
+                        "Meeting Name",
+                        "Division",        
+                        "Dates",
+                        "Active"
+                    ]
+                ShowScrollbar: =false
+                TemplatePadding: =0.00
+                TemplateSize: =96.05
+                Width: =1132.64
+                X: =218
+                Y: =123
+                ZIndex: =36
+
+                Title1_3 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =8.54
+                    Text: =ThisItem.Value
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =95.34
+                    X: =0.00
+                    ZIndex: =2
+
+                Rectangle4_3 As rectangle:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =46
+                    OnSelect: =Select(Parent)
+                    Width: =1.42
+                    X: =94.62
+                    ZIndex: =3
+
+            "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                Items: ='Tracking Codes'
+                Layout: =Layout.Vertical
+                TemplatePadding: =0
+                TemplateSize: =Min(160, Self.Height - 60)
+                Width: =1128
+                X: =220
+                Y: =171
+                ZIndex: =37
+
+                Label2_14 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Tracking Code'
+                    Width: =104
+                    X: =78
+                    ZIndex: =1
+
+                Label2_11 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Campaign.'Campaign Name'
+                    Width: =104
+                    X: =182
+                    ZIndex: =2
+
+                Label2_12 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Partners.'Partner Name'
+                    Width: =104
+                    X: =270
+                    ZIndex: =3
+
+                Label2_13 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Added to Oracle'
+                    Width: =104
+                    X: =374
+                    ZIndex: =4
+
+                Label2_15 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Added to Coupa'
+                    Width: =104
+                    X: =478
+                    ZIndex: =5
+
+                Label2_16 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Added to Concur'
+                    Width: =104
+                    X: =567
+                    ZIndex: =6
+
+                Label2_17 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Meeting No.'
+                    Width: =104
+                    X: =660
+                    ZIndex: =7
+
+                Label2_18 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Meeting Name'
+                    Width: =104
+                    X: =764
+                    ZIndex: =8
+
+                Label2_19 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Division
+                    Width: =104
+                    X: =852
+                    ZIndex: =9
+
+                Label2_20 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Dates
+                    Width: =104
+                    X: =956
+                    ZIndex: =10
+
+                Label2_21 As label:
+                    Height: =44
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Active
+                    Width: =80
+                    X: =1048
+                    ZIndex: =11
+
+    FilterPopUp_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Rect_OverlayBG_1 As rectangle:
+            Fill: =RGBA(60, 60, 60, 0.7)
+            Height: =768
+            Visible: =_showFilterPopUp_1
+            Width: =1366.00
+            X: =0.00
+            ZIndex: =10
+
+        Rect_filter_1 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =_showFilterPopUp_1
+            Width: =318.73
+            X: =1039.44
+            Y: =163
+            ZIndex: =11
+
+        lbl_Filterr_1 As label:
+            Align: =Center
+            Height: =47
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Filter"
+            Visible: =_showFilterPopUp_1
+            Width: =313.04
+            X: =1043.71
+            Y: =164
+            ZIndex: =12
+
+        icn_Cancel_1 As icon.Cancel:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =47
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({_showFilterPopUp_1:false})
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Visible: =_showFilterPopUp_1
+            Width: =45.53
+            X: =1311.22
+            Y: =164
+            ZIndex: =13
+
+        lbl_Trac_Code_1 As label:
+            Height: =28
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Tracking Code"
+            Visible: =_showFilterPopUp_1
+            Width: =108.14
+            X: =1069
+            Y: =224
+            ZIndex: =14
+
+        drpdown_TracCode_1 As dropdown:
+            AllowEmptySelection: =true
+            Height: =30
+            Items: ='Tracking Codes'
+            PaddingRight: =7.11
+            PaddingTop: =7.11
+            Size: =9.25
+            Visible: =_showFilterPopUp_1
+            Width: =145.85
+            X: =1068
+            Y: =259
+            ZIndex: =15
+
+        lbl_Campaign_1 As label:
+            Height: =42
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Campaign Name"
+            Visible: =_showFilterPopUp_1
+            Width: =108.14
+            X: =1068
+            Y: =304
+            ZIndex: =16
+
+        lbl_Partner_1 As label:
+            Height: =28
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Partner Name"
+            Visible: =_showFilterPopUp_1
+            Width: =108.14
+            X: =1068
+            Y: =396
+            ZIndex: =17
+
+        lblMeeting_Name_1 As label:
+            Height: =28
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Text: ="Meeting Name"
+            Visible: =_showFilterPopUp_1
+            Width: =108.14
+            X: =1068
+            Y: =498
+            ZIndex: =18
+
+        TxtMeetingName_1 As text:
+            Default: =""
+            Height: =30
+            HintText: ="Meeting Name"
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =9.25
+            Visible: =_showFilterPopUp_1
+            Width: =252.57
+            X: =1069
+            Y: =547
+            ZIndex: =19
+
+        Combox_Campaign_1 As combobox:
+            DisplayFields: =["cr8b3_name"]
+            Height: =30
+            Items: ='Partner Codess'
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            SearchFields: =["cr8b3_name"]
+            SearchItems: =Search('Partner Codess',Combox_Campaign_1.SearchText,"cr8b3_name")
+            Size: =9.25
+            Visible: =_showFilterPopUp_1
+            Width: =143.71
+            X: =1068
+            Y: =350
+            ZIndex: =20
+
+        icn_Reset_1 As icon.Reset:
+            Height: =32
+            Icon: =Icon.Reset
+            OnSelect: =Reset(drpdown_TracCode_1);Reset(Combox_Partner_1)
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Visible: =_showFilterPopUp_1
+            Width: =45.53
+            X: =1048.69
+            Y: =172
+            ZIndex: =21
+
+        Combox_Partner_1 As combobox:
+            DisplayFields: =["cr8b3_partnername"]
+            Height: =30
+            Items: ='Partner Codess'
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            SearchFields: =["cr8b3_partnername"]
+            SearchItems: =Search('Partner Codess',Combox_Partner_1.SearchText,"cr8b3_partnername")
+            Size: =9.25
+            Visible: =_showFilterPopUp_1
+            Width: =143.71
+            X: =1068
+            Y: =437
+            ZIndex: =22
+
+    Formpopup_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        RectOverlay_BG_1 As rectangle:
+            Fill: =RGBA(60, 60, 60, 0.7)
+            Height: =768
+            Visible: =_showFormpopup_1
+            Width: =1366.00
+            X: =0.00
+            ZIndex: =23
+
+        RectForm_1 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =650
+            Visible: =_showFormpopup_1
+            Width: =1031
+            X: =228
+            Y: =114
+            ZIndex: =24
+
+        btnSubmit_3 As button:
+            Fill: =RGBA(9, 33, 98, 1)
+            Height: =36
+            OnSelect: =SubmitForm(Form2_5);Notify("Record Submitted Successfully",NotificationType.Success,5000)
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Size: =9.96
+            Text: ="Submit"
+            Visible: =_showFormpopup_1
+            Width: =141
+            X: =655
+            Y: =700
+            ZIndex: =27
+
+        lblAdding_3 As label:
+            Align: =Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(9, 33, 98, 1)
+            Height: =50
+            PaddingRight: =3.56
+            PaddingTop: =3.56
+            Size: =12.81
+            Text: =If(Form2_5.Mode = FormMode.New,"Create new Tracking Code","  Update Existing Tracking Code")
+            Visible: =_showFormpopup_1
+            Width: =1030.19
+            X: =228
+            Y: =114
+            ZIndex: =28
+
+        iconCancel_3 As icon.Cancel:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =50
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({_showFormpopup_1:false})
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Visible: =_showFormpopup_1
+            Width: =35.57
+            X: =1224
+            Y: =114
+            ZIndex: =29
+
+    Form2 As form:
+        X: =396
+        Y: =211
+        ZIndex: =30
+

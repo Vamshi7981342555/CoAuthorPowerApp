@@ -1,0 +1,30 @@
+"'Splash Screen' As screen":
+
+    imgMVH As image:
+        Height: =229
+        Image: ='mvh-logo'
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =162.92
+        X: =618
+        Y: =180
+        ZIndex: =2
+
+    Rect As rectangle:
+        Fill: =RGBA(252, 26, 37, 1)
+        Height: =420
+        Width: =1366.00
+        X: =0.00
+        Y: =348
+        ZIndex: =3
+
+    Image18 As image:
+        Height: =557
+        Image: ='Path 2'
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =396.28
+        X: =501
+        Y: =126
+        ZIndex: =4
+

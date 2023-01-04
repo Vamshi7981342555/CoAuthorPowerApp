@@ -1,0 +1,620 @@
+"'Welcome Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    Canvas2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
+        ZIndex: =3
+
+        DataCard2 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =771
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Rect_BG_Overlay_1 As rectangle:
+                Fill: =RGBA(240, 240, 240, 1)
+                Height: =718
+                Width: =1158.97
+                X: =208
+                Y: =53
+                ZIndex: =1
+
+            Header_MVH_2 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =8
+
+                rect_BG_4 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =53
+                    Width: =1366
+                    X: =0.00
+                    ZIndex: =2
+
+                LogoMVH_4 As image:
+                    Height: =53
+                    Image: ='mvh-logo'
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =74
+                    X: =19.21
+                    ZIndex: =3
+
+                Menubar_4 As icon.Hamburger:
+                    BorderColor: =RGBA(128, 128, 128, 1)
+                    Height: =14
+                    Icon: =Icon.Hamburger
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =14
+                    X: =192.81
+                    Y: =24
+                    ZIndex: =4
+
+                ImgStatus_4 As image:
+                    Height: =33
+                    Image: =User().Image
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =25
+                    RadiusBottomRight: =25
+                    RadiusTopLeft: =25
+                    RadiusTopRight: =25
+                    Width: =35
+                    X: =1312.64
+                    Y: =9
+                    ZIndex: =5
+
+                lblNitin_4 As label:
+                    Font: =Font.Lato
+                    Height: =27
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: =User().FullName
+                    Width: =106
+                    X: =1205.92
+                    Y: =14
+                    ZIndex: =6
+
+                icnNotification_4 As icon.Bell:
+                    Color: =RGBA(39, 113, 194, 1)
+                    Height: =24
+                    Icon: =Icon.Bell
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =26
+                    X: =1158.25
+                    Y: =14
+                    ZIndex: =7
+
+                RectStraightLine_4 As rectangle:
+                    Fill: =RGBA(9, 33, 98, 1)
+                    Height: =1
+                    Width: =1366
+                    X: =0.00
+                    Y: =53
+                    ZIndex: =8
+
+            btn_Add_Campaign_1 As button:
+                Fill: =RGBA(0, 0, 160, 1)
+                Height: =36
+                OnSelect: =Navigate('Campaign and SubCampaign Code')   
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Size: =10.67
+                Text: ="Add campaign"
+                Width: =198.50
+                X: =1120
+                Y: =412
+                ZIndex: =9
+
+            Txt_SearchBox_2 As text:
+                BorderColor: =RGBA(179, 179, 179, 1)
+                BorderThickness: =1
+                Default: =""
+                Height: =36
+                HintText: ="Search campaigns"
+                PaddingLeft: =10
+                Size: =9.96
+                Width: =436.84
+                X: =250
+                Y: =410
+                ZIndex: =10
+
+            icon_Search_2 As icon.Search:
+                Color: =RGBA(128, 128, 128, 1)
+                Height: =36
+                Icon: =Icon.Search
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =21.34
+                X: =658
+                Y: =410
+                ZIndex: =11
+
+            lbl_Manage_Campaign_1 As label:
+                Color: =RGBA(68, 68, 68, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Text: ="Manage campaigns"
+                Width: =277.47
+                X: =242
+                Y: =56
+                ZIndex: =28
+
+            RectStLine_3 As rectangle:
+                Fill: =RGBA(116, 116, 116, 1)
+                Height: =1
+                Width: =1102.76
+                X: =242
+                Y: =99
+                ZIndex: =29
+
+            lbl_Weekly_Campaign_1 As label:
+                Height: =49
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Text: ="Featured campaigns"
+                Width: =269.64
+                X: =242
+                Y: =103
+                ZIndex: =30
+
+            lbl_Weekly_Partners_1 As label:
+                Height: =49
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =12.81
+                Text: ="Recent partners"
+                Width: =269.64
+                X: =809
+                Y: =103
+                ZIndex: =31
+
+            Rect_Campaign_Overlay_1 As button:
+                Color: =RGBA(0, 18, 107, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =247
+                HoverFill: =Self.Fill
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =10.67
+                Text: =""
+                Width: =511.54
+                X: =242
+                Y: =148
+                ZIndex: =32
+
+            Rect_Partner_Overlay_1 As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =247
+                HoverFill: =Self.Fill
+                PaddingRight: =3.56
+                PaddingTop: =3.56
+                Size: =10.67
+                Text: =""
+                Width: =510.12
+                X: =808
+                Y: =148
+                ZIndex: =33
+
+            "Gal_Campaign_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                Height: =236
+                Items: =colCampaign
+                Layout: =Layout.Vertical
+                OnSelect: |-
+                    =Set(
+                        g_CurrentSelectedCampaign,
+                        Gal_Campaign_1.Selected.'Campaign Name'
+                    );
+                    EditForm(Form1);
+                    Navigate('Campaign and SubCampaign Code')
+                ShowScrollbar: =false
+                TemplatePadding: =0
+                TemplateSize: =60
+                Width: =493.04
+                X: =249
+                Y: =154
+                ZIndex: =34
+
+                lbl_Camp_code_1 As label:
+                    Height: =60
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =9.96
+                    Text: =ThisItem.'Campaign Code'
+                    Width: =69.01
+                    X: =392.01
+                    ZIndex: =1
+
+                Separator2_2 As rectangle:
+                    Fill: =RGBA(153, 153, 153, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =493.04
+                    X: =0.00
+                    Y: =Parent.TemplateHeight - 1
+                    ZIndex: =2
+
+                lbl_Camp_Name_1 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =60
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =9.96
+                    Text: =ThisItem.'Campaign Name'
+                    Width: =121.66
+                    X: =185.69
+                    ZIndex: =3
+
+                lbl_SerialNum_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =60
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: =ThisItem.'Row Number'
+                    Width: =37.00
+                    X: =10.67
+                    ZIndex: =4
+
+                Image2_2 As image:
+                    Height: =60
+                    Image: =ThisItem.'Campaign Image'
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Width: =42.69
+                    X: =72.57
+                    ZIndex: =5
+
+            "Gal_Partners_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                Height: =236
+                Items: =colPartner
+                Layout: =Layout.Vertical
+                OnSelect: |
+                    =Set(
+                        g_CurrentSelectedPartners,
+                        Gal_Partners_1.Selected.'Partner Name'
+                    );
+                    Navigate('Partner Code Screen')
+                ShowScrollbar: =false
+                TemplatePadding: =0
+                TemplateSize: =60
+                Width: =493.04
+                X: =816
+                Y: =154
+                ZIndex: =35
+
+                lbl_Partner_Code_1 As label:
+                    Align: =Align.Center
+                    Height: =60
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =9.96
+                    Text: =ThisItem.'Key Contact Name'
+                    Width: =73.99
+                    X: =374.94
+                    ZIndex: =3
+
+                Separator2_3 As rectangle:
+                    Fill: =RGBA(153, 153, 153, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =493.04
+                    X: =0.00
+                    Y: =Parent.TemplateHeight - 1
+                    ZIndex: =5
+
+                lbl_Partner_Name_1 As label:
+                    Color: =RGBA(0, 0, 160, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =60
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.96
+                    Text: =ThisItem.'Partner Name'
+                    Width: =106.72
+                    X: =192.81
+                    ZIndex: =6
+
+                lbl_serial_Partners_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =60
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: =ThisItem.'Row Number'
+                    Width: =37.00
+                    X: =10.67
+                    ZIndex: =7
+
+                Image2_3 As image:
+                    Height: =60
+                    Image: =ThisItem.Logo
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Width: =42.69
+                    X: =66.88
+                    ZIndex: =8
+
+            "HorizontalGallery_1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+                Height: =280
+                Items: |-
+                    =Search(
+                        'Campaign and Subcampaign Codess',
+                        Txt_SearchBox_2.Text,
+                        "cr8b3_campaignname"
+                    )
+                OnSelect: |-
+                    =Set(
+                        g_CurrentSelectedCampaign,
+                        HorizontalGallery_1.Selected.'Campaign Name'
+                    );
+                    Navigate('Campaign and SubCampaign Code')
+                ShowScrollbar: =false
+                TemplatePadding: =0.00
+                TemplateSize: =278.89
+                Width: =1082.84
+                X: =236
+                Y: =473
+                ZIndex: =36
+
+                Image3_1 As image:
+                    Height: =200
+                    Image: =ThisItem.'Campaign Image'
+                    ImagePosition: =ImagePosition.Fill
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =200
+                    X: =44
+                    Y: =4
+                    ZIndex: =1
+
+                Title1_2 As label:
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =9.96
+                    Text: =ThisItem.'Campaign Name'
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =233.36
+                    X: =11.38
+                    Y: =214
+                    ZIndex: =2
+
+                Subtitle1_1 As label:
+                    Height: =43
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =8.54
+                    Text: =ThisItem.Description
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =256.13
+                    X: =11.38
+                    Y: =237
+                    ZIndex: =3
+
+            Group_VerticalMenu_1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =-41
+                ZIndex: =52
+
+                Rectangle8_29 As rectangle:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =53
+                    OnSelect: =Navigate('Landing Screen')
+                    Width: =207
+                    Y: =107
+                    ZIndex: =12
+
+                Rectangle8_27 As rectangle:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =53
+                    OnSelect: =Navigate('Partner Code Screen')
+                    Width: =207
+                    Y: =212
+                    ZIndex: =13
+
+                Rectangle1_27 As rectangle:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =26
+                    OnSelect: =Navigate('Partner Code Screen')
+                    Width: =2.13
+                    X: =19
+                    Y: =234
+                    ZIndex: =14
+
+                Label1_27 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Partner Code Screen')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Partner Code"
+                    Width: =106.72
+                    X: =69
+                    Y: =227
+                    ZIndex: =15
+
+                Icon3_9 As icon.People:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =26
+                    Icon: =Icon.People
+                    OnSelect: =Navigate('Partner Code Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =18.50
+                    X: =37
+                    Y: =236
+                    ZIndex: =16
+
+                Rectangle8_28 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =53
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    Width: =206
+                    Y: =159
+                    ZIndex: =17
+
+                Rectangle1_28 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    Width: =2.13
+                    X: =19
+                    Y: =178
+                    ZIndex: =18
+
+                Label1_28 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Campaign"
+                    Width: =106.72
+                    X: =69
+                    Y: =171
+                    ZIndex: =19
+
+                Icon2_9 As icon.Calendar:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =28
+                    Icon: =Icon.AddToCalendar
+                    OnSelect: =Navigate('Campaign and SubCampaign Code')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =19.92
+                    X: =34
+                    Y: =177
+                    ZIndex: =20
+
+                Rectangle8_32 As rectangle:
+                    Fill: =RGBA(0, 0, 160, 1)
+                    Height: =54
+                    OnSelect: =Navigate('Welcome Screen')
+                    Width: =207.03
+                    Y: =54
+                    ZIndex: =21
+
+                Rectangle1_29 As rectangle:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Landing Screen')
+                    Width: =2.13
+                    X: =19
+                    Y: =126
+                    ZIndex: =22
+
+                Icon1_9 As icon.CollapseView:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Height: =26
+                    Icon: =Icon.CollapseView
+                    OnSelect: =Navigate('Landing Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =18.50
+                    X: =36
+                    Y: =126
+                    ZIndex: =23
+
+                Label1_29 As label:
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Landing Screen')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Tracking Code"
+                    Width: =106.72
+                    X: =69
+                    Y: =119
+                    ZIndex: =24
+
+                Rectangle1_32 As rectangle:
+                    Fill: =RGBA(252, 252, 252, 1)
+                    Height: =26
+                    OnSelect: =Navigate('Welcome Screen')
+                    Width: =2.13
+                    X: =19
+                    Y: =72
+                    ZIndex: =25
+
+                Label1_31 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.Lato
+                    FontWeight: =FontWeight.Bold
+                    OnSelect: =Navigate('Welcome Screen')
+                    PaddingRight: =3.56
+                    PaddingTop: =3.56
+                    Size: =9.25
+                    Text: ="Welcome Screen"
+                    Width: =106.72
+                    X: =66
+                    Y: =66
+                    ZIndex: =26
+
+                Icon1_6 As icon.Home:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =28
+                    Icon: =Icon.Home
+                    OnSelect: =Navigate('Welcome Screen')
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =19.92
+                    X: =37
+                    Y: =69
+                    ZIndex: =27
+
