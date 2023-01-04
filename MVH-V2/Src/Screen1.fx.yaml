@@ -25,3 +25,12 @@ Screen1 As screen:
         Y: =270
         ZIndex: =3
 
+    Label4 As label:
+        Height: =146
+        Size: =40
+        Text: ="Vamshi"
+        Width: =512
+        X: =495
+        Y: =423
+        ZIndex: =4
+
